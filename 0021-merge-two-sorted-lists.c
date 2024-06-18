@@ -1,4 +1,6 @@
 
+#include <stddef.h>
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -6,7 +8,11 @@
  *     struct ListNode *next;
  * };
  */
-
+ 
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2){
     

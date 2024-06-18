@@ -7,6 +7,8 @@
 
 
 // An array with array_size to store each unique combination during backtracking.
+#include <stdlib.h>
+
 struct Combination_Array {
     int* array;
     int array_size;

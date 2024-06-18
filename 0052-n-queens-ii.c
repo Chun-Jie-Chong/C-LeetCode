@@ -4,7 +4,9 @@ Given an integer n, return the number of distinct solutions to the n-queens puzz
 Space: O(n²)
 Time: ?
 */
+#include <stdlib.h>
 
+#include <stdbool.h>
 int min(int a, int b){
     return a<b?a:b;
 }

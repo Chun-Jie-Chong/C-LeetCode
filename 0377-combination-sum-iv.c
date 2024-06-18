@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 int combinationSum4(int* nums, int numsSize, int target) {
     uint64_t dp[target + 1]; // Using uint64_t to avoid overflow
     for (int i = 0; i <= target; i++) {

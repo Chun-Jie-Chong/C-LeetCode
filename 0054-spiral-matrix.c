@@ -1,6 +1,8 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
+#include <stdlib.h>
+
 int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSize) {
     // Allocate the result array and set its size
     int *result = (int*)malloc(sizeof(int) * matrixSize * matrixColSize[0]);

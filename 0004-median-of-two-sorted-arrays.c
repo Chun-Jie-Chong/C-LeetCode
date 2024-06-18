@@ -3,6 +3,9 @@
     Space: O(1)
 */
 
+#include <stdbool.h>
+#include <limits.h>
+
 #define min(x, y) ((x < y) ? (x) : (y))
 #define max(x, y) ((x > y) ? (x) : (y))
 

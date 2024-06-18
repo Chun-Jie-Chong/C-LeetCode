@@ -1,3 +1,5 @@
+#include <limits.h>
+
 const int MAX_N = 1e5 + 5;
 struct Stack
 {

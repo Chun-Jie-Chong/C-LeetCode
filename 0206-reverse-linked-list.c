@@ -16,6 +16,12 @@
  * Space: O(1)
  * Time: O(n)
  */
+#include <stddef.h>
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 struct ListNode* reverseList(struct ListNode* head){
     struct ListNode *current = head;

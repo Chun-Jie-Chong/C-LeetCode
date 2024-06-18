@@ -4,6 +4,7 @@ Given a string s, return the longest palindromic substring in s.
 Time: O(n^2)
 Space: O(1)
 */
+#include <stdlib.h>
 
 char* longestPalindrome(char * s){
     int pos=0;

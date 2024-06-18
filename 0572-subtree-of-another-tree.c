@@ -1,12 +1,13 @@
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+#include <stdbool.h>
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+ 
 
 bool isSame(struct TreeNode* p, struct TreeNode* q) {
     

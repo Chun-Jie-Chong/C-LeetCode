@@ -1,3 +1,4 @@
+#include <stdbool.h>
 /*
 
 Space: O(n²) (due to recursives calls)

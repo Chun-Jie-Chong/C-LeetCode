@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 #define MIN 5
 
 typedef struct myInstance {

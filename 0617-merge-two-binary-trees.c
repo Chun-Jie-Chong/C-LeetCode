@@ -5,6 +5,14 @@ Return the merged tree
 Time: O(n)
 Space: O(1) As we reuse the trees
 */
+#include <stddef.h>
+
+// Define the TreeNode structure
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
 
 struct TreeNode* mergeTrees(struct TreeNode* root1, struct TreeNode* root2){
     if (root1==NULL)

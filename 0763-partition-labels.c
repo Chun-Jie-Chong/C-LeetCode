@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 int* partitionLabels(char* s, int* returnSize) {
     int* result = NULL;
     int* lastOccurrence = (int*)calloc(26, sizeof(int)); // Store the last occurrence index of each character

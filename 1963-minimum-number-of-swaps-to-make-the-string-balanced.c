@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 #define max(x, y) ((x) > (y) ? (x) : (y))
 
 int minSwaps(char * s){

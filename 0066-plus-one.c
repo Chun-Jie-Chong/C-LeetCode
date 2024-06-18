@@ -19,6 +19,8 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
+#include <stdlib.h>
+
 int* plusOne(int* digits, int digitsSize, int* returnSize){
     
     // Reserve the result with a digitsSize+1 size array

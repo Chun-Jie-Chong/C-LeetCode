@@ -7,6 +7,7 @@ Where n is the size of operations
 */
 
 //-------Implementation of a stack--------
+#include <stddef.h>
 
 typedef struct stack {
     int val;

@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool canPartition(int* nums, int numsSize) {
     int totalSum = 0;
     for (int i = 0; i < numsSize; i++) {

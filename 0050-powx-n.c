@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 double calc(double x, int n) {
     long exponent = abs(n);
     

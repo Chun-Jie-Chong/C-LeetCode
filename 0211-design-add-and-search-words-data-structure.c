@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 typedef struct WordDictionary{
     struct WordDictionary *c[26];
     bool isWord;

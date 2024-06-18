@@ -3,6 +3,7 @@ Return the fewest number of coins that you need to make up that amount.
 Time; O(nm) where n is the amount desired and m the number of coins
 Space: O(n)
 */
+#include <limits.h>
 
 int min(unsigned int a, int b) {
     return a<b?a:b;

@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -11,7 +13,10 @@
  * Space: O(1)
  */
 
-typedef struct ListNode ListNode;
+typedef struct ListNode {
+    int val;
+    struct ListNode *next;
+} ListNode;
 
 ListNode* mergeLists(ListNode* l1, ListNode* l2)
 {

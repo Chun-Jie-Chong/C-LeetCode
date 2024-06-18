@@ -5,6 +5,13 @@
  *     struct ListNode *next;
  * };
  */
+#include <stddef.h>
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
 struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB) {
         struct ListNode *currA = headA;
         struct ListNode *currB = headB;

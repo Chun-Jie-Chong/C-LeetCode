@@ -1,10 +1,8 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 // Time: O(n)
 // Space: O(1)

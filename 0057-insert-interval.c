@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 int** insert(int** intervals, int intervalsSize, int* intervalsColSize, int* newInterval, int newIntervalSize, int* returnSize, int** returnColumnSizes) {
     // Create a result array to store the merged intervals
     int** result = (int**)malloc(sizeof(int*) * (intervalsSize + 1));

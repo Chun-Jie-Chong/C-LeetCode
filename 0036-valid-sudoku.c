@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool isValidSudoku(char** board, int boardSize, int* boardColSize){
     const int cnt = boardSize;
     bool row[cnt][cnt];

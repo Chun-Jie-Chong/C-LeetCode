@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool isHappy(int n) {
     int slow = n;
     int fast = sumSquareDigits(n);

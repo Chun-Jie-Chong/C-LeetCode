@@ -1,11 +1,11 @@
-/**
- * Definition for a Node.
- * struct Node {
- *     int val;
- *     struct Node *next;
- *     struct Node *random;
- * };
- */
+#include <stddef.h>
+
+struct Node {
+    int val;
+    struct Node *next;
+     struct Node *random;
+};
+
 
 /*
     Time: O(n)

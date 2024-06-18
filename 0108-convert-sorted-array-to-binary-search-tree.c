@@ -5,6 +5,13 @@ ascending order, convert it to a height-balanced binary search tree.
 Space: O(n)
 Time: O(n)
 */
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
 
 struct TreeNode* dichomoty_rec(int* nums, int i, int j) {
     if (i>j)

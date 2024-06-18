@@ -17,6 +17,7 @@
     Time: O(log(mn))
     Space: O(1)
 */
+#include <stdbool.h>
 
 bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target){
     int m = matrixSize;

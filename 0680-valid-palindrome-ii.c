@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool validPalindromeLR(char * s, int left, int right){
     while (left < right) {
         if (s[left] != s[right]) {

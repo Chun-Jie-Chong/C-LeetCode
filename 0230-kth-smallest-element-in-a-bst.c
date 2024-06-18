@@ -6,6 +6,13 @@ in the tree.
 Space: O(log(n)) (due to recursive calls)
 Time: O(n)
 */
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
 
 void iterate_bst(struct TreeNode* t, int* pos, int* ans, int k) {
     if (t==NULL)

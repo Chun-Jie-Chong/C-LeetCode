@@ -4,6 +4,13 @@ Time: O(n)
 Space: O(1)
 
 */
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
 
 int max(int a, int b) {
     return a>b?a:b;

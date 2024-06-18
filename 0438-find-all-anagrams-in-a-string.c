@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 #define TO_INDEX(c) c - 'a'
 
 bool isEquals(int* a, int* b, int n) {

@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+
 char* multiply(char* num1, char* num2) {
     int len1 = strlen(num1);
     int len2 = strlen(num2);

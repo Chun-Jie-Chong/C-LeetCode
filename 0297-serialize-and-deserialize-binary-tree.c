@@ -6,7 +6,15 @@
  *     struct TreeNode *right;
  * };
  */
+#include <stddef.h>
+
 #define DATA_ALLOCATION_SIZE 10000
+
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
 
 typedef struct TreeNode TreeNode;
 

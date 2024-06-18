@@ -1,4 +1,6 @@
 // Interval structure
+#include <stdlib.h>
+
 struct Interval {
     int start;
     int end;

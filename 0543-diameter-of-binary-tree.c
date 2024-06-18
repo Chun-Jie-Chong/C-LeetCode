@@ -6,6 +6,13 @@
  *     struct TreeNode *right;
  * };
  */
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
 
 int max(int a, int b) {
     if (a > b) {

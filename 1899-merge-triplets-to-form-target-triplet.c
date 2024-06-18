@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool mergeTriplets(int** triplets, int tripletsSize, int* tripletsColSize, int* target, int targetSize) {
     int x = 0, y = 0, z = 0;
 

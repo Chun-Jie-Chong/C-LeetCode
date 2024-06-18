@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 #define INIT_HASH_SIZE 1024
 
 // Represent an element in a hash table.

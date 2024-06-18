@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void backtrack(int *candidates, int candidatesSize, int target, int start, int *current, int currentSize, int **result, int *resultSize, int *returnColumnSizes) {
     if (target == 0) {
         result[*resultSize] = (int *)malloc(currentSize * sizeof(int));

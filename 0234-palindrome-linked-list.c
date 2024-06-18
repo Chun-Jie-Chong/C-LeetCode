@@ -5,6 +5,14 @@
  *     struct ListNode *next;
  * };
  */
+#include <stdbool.h>
+#include <stddef.h>
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
 bool isPalindrome(struct ListNode* head){
 
     // find middle of linked list

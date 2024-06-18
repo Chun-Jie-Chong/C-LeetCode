@@ -2,6 +2,7 @@
     Time: O(n)
     Space: O(1)
 */
+#include <stdbool.h>
 
 bool isPalindrome(char * s){
     int n = strlen(s);

@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+
 int strStr(char * haystack, char * needle){
     int h_size = strlen(haystack);
     int n_size = strlen(needle);

@@ -1,3 +1,8 @@
+// C doesn't have a built-in max function
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
 int jump(int* nums, int numsSize){
     int left = 0;
     int right = 0;
@@ -15,7 +20,3 @@ int jump(int* nums, int numsSize){
     return res;
 }
 
-// C doesn't have a built-in max function
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}

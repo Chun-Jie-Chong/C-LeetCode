@@ -1,3 +1,5 @@
+#include <limits.h>
+
 int maxProfit(int* prices, int pricesSize){
     int sold = 0;
     int hold = INT_MIN;

@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool isPermutation(int *count) {
     for (int i = 0; i < 26; i++) {
         if (count[i] != 0) {

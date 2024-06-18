@@ -5,6 +5,12 @@
  *     struct ListNode *next;
  * };
  */
+#include <stddef.h>
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 struct ListNode* merge(struct ListNode *list1, struct ListNode *list2) {
     struct ListNode *head, *tail;

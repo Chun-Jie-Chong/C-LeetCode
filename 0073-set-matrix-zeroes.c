@@ -21,6 +21,7 @@
     Space: O(1)
 */
 
+#include <stdbool.h>
 void setZeroes(int** matrix, int matrixSize, int* matrixColSize){
     int ROW = matrixSize;
     int COL = *matrixColSize;

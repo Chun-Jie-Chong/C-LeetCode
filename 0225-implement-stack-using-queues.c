@@ -1,3 +1,6 @@
+#include <stddef.h>
+#include <stdbool.h>
+
 // A structure to represent an element of the queue.
 typedef struct Node {
     int value;

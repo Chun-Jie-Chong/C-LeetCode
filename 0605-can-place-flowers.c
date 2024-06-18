@@ -6,6 +6,7 @@ violating the no-adjacent-flowers rule.
 Space: O(1)
 Time: O(n)
 */
+#include <stdbool.h>
 
 bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n){
     int cpt = 0; // Count the number of flowers that can be added

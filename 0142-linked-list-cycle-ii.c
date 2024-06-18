@@ -16,15 +16,16 @@
  * -105 <= Node.val <= 105
  * pos is -1 or a valid index in the linked-list.
  *
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
  *
  * Space: O(1)
  * Time: O(n)
  */
+#include <stddef.h>
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 struct ListNode *detectCycle(struct ListNode *head) {
     struct ListNode *fast = head;

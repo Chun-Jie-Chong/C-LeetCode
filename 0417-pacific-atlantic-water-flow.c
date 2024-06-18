@@ -5,6 +5,7 @@
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
+#include <stdbool.h>
 
 int directions[4][2] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 bool pacific_reach[200][200];

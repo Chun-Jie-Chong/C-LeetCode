@@ -1,3 +1,5 @@
+#include <limits.h>
+
 int reverse(int x){
     int res = 0;
 

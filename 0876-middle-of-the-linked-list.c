@@ -9,15 +9,16 @@
  * The number of nodes in the list is in the range [1, 100].
  * 1 <= Node.val <= 100
  *
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
  *
  * Space = O(1)
  * Time = O(n)
  */
+
+// Definition for singly-linked list.
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 struct ListNode* middleNode(struct ListNode* head){
     struct ListNode* slow = head;

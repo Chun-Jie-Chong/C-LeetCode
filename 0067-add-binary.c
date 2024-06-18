@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 char *addBinary(const char *a, const char *b) {
     int maxLen = strlen(a) > strlen(b) ? strlen(a) : strlen(b);
     char *res = (char *)malloc((maxLen + 2) * sizeof(char));

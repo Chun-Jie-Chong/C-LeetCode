@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool canJump(int* nums, int numsSize){
     int goal = numsSize - 1;
     

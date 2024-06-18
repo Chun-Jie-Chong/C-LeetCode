@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool isInterleave(char *s1, char *s2, char *s3) {
     int len1 = strlen(s1);
     int len2 = strlen(s2);

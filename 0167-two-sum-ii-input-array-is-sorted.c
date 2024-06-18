@@ -6,6 +6,7 @@
     Time: O(n)
     Space: O(1)
 */
+#include <stdbool.h>
 
 int* twoSum(int* numbers, int numbersSize, int target, int* returnSize){
     *returnSize = 2;

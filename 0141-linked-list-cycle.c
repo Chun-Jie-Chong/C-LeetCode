@@ -1,11 +1,12 @@
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
+#include <stdbool.h>
+#include <stddef.h>
+
+struct ListNode {     
+    int val;
+    struct ListNode *next;
+};
+ 
 
 bool Traverse(struct ListNode* slow, struct ListNode* fast) {
 

@@ -20,6 +20,14 @@
  *     struct ListNode *next;
  * };
  */
+#include <stddef.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
 struct ListNode* newNode(int val) {
     struct ListNode* node = (struct ListNode*) malloc(sizeof(struct ListNode));
     node->val = val;

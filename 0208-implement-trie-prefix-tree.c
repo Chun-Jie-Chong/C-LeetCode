@@ -3,6 +3,8 @@
 //     struct trieNode* nextNodes[26];
 //     bool end;  
 // };
+#include <stdbool.h>
+#include <stddef.h>
 
 typedef struct {
     struct Trie* nextNodes[26]; /* a Trie* pointer array of size 26 to store char nodes from a to z*/

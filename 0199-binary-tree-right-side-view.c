@@ -19,14 +19,14 @@
     Space: O(n)
 */
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
+#include <stddef.h>
+
+ struct TreeNode {
+     int val;
+     struct TreeNode *left;
+     struct TreeNode *right;
+ };
+ 
 
 void dfs(struct TreeNode* root, int* result, int* returnSize, int depth) {
     if (root == NULL)

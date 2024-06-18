@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -6,6 +8,10 @@
  * };
  */
 
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
     if (head->next == NULL) {

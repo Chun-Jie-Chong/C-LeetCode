@@ -1,3 +1,7 @@
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+
 bool isMatch(char *s, char *p) {
     int m = strlen(s);
     int n = strlen(p);

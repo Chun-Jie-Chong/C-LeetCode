@@ -7,7 +7,7 @@ Space: O(1)
 Time: O(n*m)
 (Where n is the number of words and m the average length of the elements in words)
 */
-
+#include <stdbool.h>
 
 bool isAlienSorted(char ** words, int wordsSize, char * order){
     int alphabet[26] = {0};

@@ -1,3 +1,6 @@
+#include <stdbool.h>
+#include <stddef.h>
+
 #define FREE_AND_RETURN(x, y) \
 free(x); \
 return y;

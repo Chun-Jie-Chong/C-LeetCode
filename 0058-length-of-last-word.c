@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+
 int lengthOfLastWord(char * s){
     int len = 0;
     

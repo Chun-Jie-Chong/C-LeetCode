@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 bool isAnagram(char* s, char* t) {
     int hash[26] = {0};
     int i = 0;

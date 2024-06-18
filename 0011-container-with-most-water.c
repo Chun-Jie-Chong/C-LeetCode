@@ -1,3 +1,12 @@
+// C does not have a predefined min and max function
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+int min(int a, int b) {
+    return (a < b) ? a : b;
+}
+
 int maxArea(int* height, int heightSize){
     int left = 0;
     int right = heightSize - 1;
@@ -15,11 +24,3 @@ int maxArea(int* height, int heightSize){
     return res;
 }
 
-// C does not have a predefined min and max function
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}
-
-int min(int a, int b) {
-    return (a < b) ? a : b;
-}

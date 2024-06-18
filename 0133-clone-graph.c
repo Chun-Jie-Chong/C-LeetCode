@@ -1,12 +1,11 @@
+#include <stddef.h>
 
-/**
- * Definition for a Node.
- * struct Node {
- *     int val;
- *     int numNeighbors;
- *     struct Node** neighbors;
- * };
- */
+struct Node {
+    int val;
+    int numNeighbors;
+    struct Node** neighbors;
+};
+
 
 struct Node* create_node(int val, int numNeighbors) {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));

@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 int numDistinct(char *s, char *t) {
     int m = strlen(s);
     int n = strlen(t);

@@ -4,6 +4,13 @@ Return the total sum of all root-to-leaf numbers.
 Space: O(1)
 Time: O(n)
 */
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
 
 int dfs(struct TreeNode* r, int acc) {
     if (r==NULL)

@@ -1,3 +1,8 @@
+// C doesn't have a built-in max function
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
 int maxSubArray(int* nums, int numsSize){
     int result = nums[0];
     int total = 0;
@@ -12,7 +17,3 @@ int maxSubArray(int* nums, int numsSize){
     return result;
 }
 
-// C doesn't have a built-in max function
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}

@@ -1,3 +1,5 @@
+#include <string.h>
+
 char * longestCommonPrefix(char ** strs, int strsSize){
     int commonPrefixCount = 0;
     int firstStrSize = strlen(strs[0]);

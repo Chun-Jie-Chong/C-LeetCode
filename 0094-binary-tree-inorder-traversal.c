@@ -5,6 +5,15 @@ Space: O(n)
 Time: O(n)
 */
 
+#include <stddef.h>
+
+// Define the struct TreeNode type
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
+
 void fill_array(struct TreeNode* root, int* ans, int* pos) {
     // Fill the array with the inorder traversal order
     if (root==NULL)

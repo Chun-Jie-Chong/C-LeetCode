@@ -6,6 +6,13 @@
  *     struct TreeNode *right;
  * };
  */
+#include <stddef.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
 
 struct TreeNode *invertTree(struct TreeNode* root) {
 

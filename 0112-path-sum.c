@@ -6,6 +6,13 @@ along the path equals targetSum.
 Space: O(log(n)) (due to recursive calls)
 Time: O(n)
 */
+#include <stdbool.h>
+
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
 
 bool hasPathSum(struct TreeNode* root, int targetSum){
     if (!root)

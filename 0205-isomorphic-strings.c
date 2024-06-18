@@ -4,6 +4,7 @@ Given two strings s and t, determine if they are isomorphic.
 Space: O(1)
 Time: O(n)
 */
+#include <stdbool.h>
 
 bool isIsomorphic(char * s, char * t){
     int alphabet_s[256]; // Alphabet of t letters to s

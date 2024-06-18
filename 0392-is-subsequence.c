@@ -24,6 +24,7 @@
  * Space: O(1)
  * Time: O(n)
  */
+#include <stdbool.h>
 
 bool isSubsequence(char * s, char * t){
     char *s_char = s;

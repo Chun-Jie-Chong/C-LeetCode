@@ -4,7 +4,7 @@ Time: O(n*m*(3^h)) where h is the length of the word
 Space: O(1)
 
 */
-
+#include <stdbool.h>
 bool dfs(char** board, int n, int m, int i, int j, char* word) {
     if (word[0]=='\0' || word[1]=='\0')
         return true;
