@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given a string s containing only digits, return the number 
 of ways to decode it.

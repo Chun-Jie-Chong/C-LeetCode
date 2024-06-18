@@ -1,3 +1,7 @@
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+
 int findNumberOfLIS(int* nums, int numsSize) {
     if (numsSize == 0) {
         return 0;

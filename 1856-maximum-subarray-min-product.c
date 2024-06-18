@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #define MOD 1000000007
 
 long long max(long long a, long long b) {

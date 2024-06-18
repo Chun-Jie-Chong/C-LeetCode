@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -7,6 +10,7 @@
  * };
  */
 #include <stddef.h>
+#include <stdio.h>
 
 #define DATA_ALLOCATION_SIZE 10000
 

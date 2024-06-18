@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Time: log(min(n, m))
     Space: O(1)

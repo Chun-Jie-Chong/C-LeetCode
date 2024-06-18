@@ -1,3 +1,16 @@
+#include <string.h>
+#include <stdlib.h>
+
+// C doesn't have a built-in max function
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+// C doesn't have a built-in min function
+int min(int a, int b) {
+    return (a < b) ? a : b;
+}
+
 int maxProduct(int* nums, int numsSize){
     int res = nums[0], curMin = 1, curMax = 1;
     
@@ -10,12 +23,3 @@ int maxProduct(int* nums, int numsSize){
     return res;
 }
 
-// C doesn't have a built-in max function
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}
-
-// C doesn't have a built-in min function
-int min(int a, int b) {
-    return (a < b) ? a : b;
-}

@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Return an edge that can be removed so that the resulting graph is a tree of n nodes.
 Time: O(n)

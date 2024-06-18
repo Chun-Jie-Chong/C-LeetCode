@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 You want to rearrange the elements in the array such that every element 
 in the rearranged array is not equal to the average of its neighbors

@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Return the total sum of all root-to-leaf numbers.
 

@@ -1,3 +1,7 @@
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+
 typedef struct {
     int x;
     int y;

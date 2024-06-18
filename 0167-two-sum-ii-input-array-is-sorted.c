@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 
 /*
     Given a 1-indexed sorted int array & target:

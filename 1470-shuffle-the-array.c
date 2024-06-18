@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int* shuffle(int* nums, int numsSize, int n, int* returnSize) {
     *returnSize = numsSize;
     int* result = (int*)malloc(numsSize * sizeof(int));

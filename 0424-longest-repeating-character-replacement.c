@@ -1,3 +1,11 @@
+#include <string.h>
+#include <stdlib.h>
+
+// C doesn't have a built-in max function
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
 int characterReplacement(char * s, int k){
     int count[26] = {0};
     int left = 0, right = 0, maxCount = 0;
@@ -14,7 +22,4 @@ int characterReplacement(char * s, int k){
     return right - left;
 }
 
-// C doesn't have a built-in max function
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}
+

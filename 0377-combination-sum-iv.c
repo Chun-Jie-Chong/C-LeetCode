@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <stdint.h>
 
 int combinationSum4(int* nums, int numsSize, int target) {

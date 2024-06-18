@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 
 // struct trieNode {
 //     struct trieNode* nextNodes[26];

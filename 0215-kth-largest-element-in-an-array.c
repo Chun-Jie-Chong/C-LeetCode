@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 // Function to partition the array using Lomuto partition scheme
 int partition(int* nums, int left, int right) {
     int pivot = nums[right];

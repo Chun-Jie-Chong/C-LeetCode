@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int missingNumber(int* nums, int numsSize){
     int res = numsSize;
     

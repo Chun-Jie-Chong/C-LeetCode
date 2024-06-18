@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <limits.h>
 
 int reverse(int x){

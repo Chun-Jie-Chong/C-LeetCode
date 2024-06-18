@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int removeDuplicates(int* nums, int numsSize){
     int indx = 1;
     

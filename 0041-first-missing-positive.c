@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int firstMissingPositive(int* nums, int numsSize){
     
     int i = 0;

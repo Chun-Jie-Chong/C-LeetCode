@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 
 Space: O(n) (because of quicksort)

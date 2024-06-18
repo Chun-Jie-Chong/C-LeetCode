@@ -1,6 +1,10 @@
+#include <string.h>
+#include <stdlib.h>
+
 // Compare two numbers in a concatenated form.
 // eg: 12 and 34 will be compared as 1234 vs 3412
 #include <stddef.h>
+#include <stdio.h>
 
 int compareInt(const void *a, const void *b) {
     int i = 10;

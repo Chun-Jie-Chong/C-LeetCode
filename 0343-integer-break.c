@@ -1,3 +1,7 @@
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+
 int integerBreak(int n) {
     if (n <= 2) {
         return 1;

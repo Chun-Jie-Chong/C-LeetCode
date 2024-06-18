@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int findPivotIndex(int* nums, int numsSize)
 {
         int s = 0;

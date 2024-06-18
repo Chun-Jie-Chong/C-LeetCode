@@ -1,3 +1,7 @@
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+
 /*
     Time: O(n)
     Space: O(1)

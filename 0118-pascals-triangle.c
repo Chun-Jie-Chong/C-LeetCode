@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given an integer numRows, return the first numRows of Pascal's triangle.
 

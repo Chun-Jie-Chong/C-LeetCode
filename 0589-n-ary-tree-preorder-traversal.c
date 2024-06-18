@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /**
  * Given the root of an n-ary tree, return the preorder traversal of its nodes'
  * values.
@@ -23,6 +26,11 @@
  * Space: O(n)
  * Time: O(n)
  */
+struct Node {
+    int val;
+    int numChildren;
+    struct Node** children;
+};
 
 void traverse(struct Node* root, int *ret, int* index) {
     if (!root)

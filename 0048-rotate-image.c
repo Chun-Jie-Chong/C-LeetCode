@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 void rotate(int** matrix, int matrixSize, int* matrixColSize){
     int left = 0;
     int right = matrixSize - 1;

@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int palSize(char *s, int size, int mask) {
     int left = 0, right = size, res = 0;
     while (left <= right) {

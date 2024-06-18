@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int dp[105] = {};
 
 int solve(int *nums, int n)

@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
 

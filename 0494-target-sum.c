@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int findTargetSumWays(int* nums, int numsSize, int target) {
     int sum = 0;
     for (int i = 0; i < numsSize; i++) {

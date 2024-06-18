@@ -1,3 +1,21 @@
+#include <string.h>
+#include <stdlib.h>
+
+void merge(int *array,int l,int m, int r);
+
+void myMergeSort(int * array, int l,int r){
+
+    if(l<r){
+        int m = (l+r)/2;
+
+        myMergeSort(array,l,m);
+        myMergeSort(array,m+1,r);
+
+        merge(array,l,m,r);
+    }
+
+};
+
 void merge(int *array,int l,int m, int r){
 
     int n1 = m-l+1;
@@ -42,20 +60,7 @@ void merge(int *array,int l,int m, int r){
         k++;
     }
 
-}
-
-void mergesort(int * array, int l,int r){
-
-    if(l<r){
-        int m = (l+r)/2;
-
-        mergesort(array,l,m);
-        mergesort(array,m+1,r);
-
-        merge(array,l,m,r);
-    }
-
-}
+};
 
 int* sortArray(int* nums, int numsSize, int* returnSize) {
 
@@ -65,10 +70,10 @@ int* sortArray(int* nums, int numsSize, int* returnSize) {
         array[i]=nums[i];
     }
 
-    mergesort(array,0,numsSize-1);
+    myMergeSort(array,0,numsSize-1);
 
     *returnSize=numsSize;
 
     return array;
     
-}
+};

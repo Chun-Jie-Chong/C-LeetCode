@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <limits.h>
 
 const int MAX_N = 1e5 + 5;

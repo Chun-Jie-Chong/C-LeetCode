@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Given a 2d matrix, where,
     1. the rows are sorted from left to right,

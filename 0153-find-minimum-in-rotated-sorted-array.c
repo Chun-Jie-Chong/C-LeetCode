@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int findMin(int* nums, int numsSize){
     // set the starting indicies to find minimum pivot
     int left = 0;

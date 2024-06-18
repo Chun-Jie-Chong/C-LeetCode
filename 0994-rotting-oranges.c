@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <stdbool.h>
 
 int directions[4][2] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};

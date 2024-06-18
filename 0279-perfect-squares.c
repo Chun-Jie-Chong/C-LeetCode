@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <limits.h>
 
 int min(int a, int b) {

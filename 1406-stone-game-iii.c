@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 char *stoneGameIII(int* stoneValue, int stoneValueSize) {
     int n = stoneValueSize;
     int dp[n];

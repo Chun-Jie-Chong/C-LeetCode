@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given an array intervals where intervals[i] = [li, ri] represent the interval
 [li, ri), remove all intervals that are covered by another interval in the list.

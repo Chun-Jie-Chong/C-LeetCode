@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
 Find and return the maximum profit you can achieve.

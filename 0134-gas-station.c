@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int canCompleteCircuit(int* gas, int gasSize, int* cost, int costSize){
     // Find the totalGas and totalCost
     int totalGas = 0;

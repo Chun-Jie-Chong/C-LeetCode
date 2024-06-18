@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int removeElement(int* nums, int numsSize, int val){
     int k = 0;
     

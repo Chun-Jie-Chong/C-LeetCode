@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <stddef.h> // Include the necessary header file for "NULL"
 
 void backtrack(int* nums, int numsSize, int start, int* subset, int subsetSize, int*** result, int* resultSize, int** resultColSizes) {

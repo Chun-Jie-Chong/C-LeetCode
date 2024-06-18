@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <stdbool.h>
 
 int cmpfunc(const void* a, const void* b) {

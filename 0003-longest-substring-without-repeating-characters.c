@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given a string s, find the length of the longest substring without repeating characters.
 Time: O(n)

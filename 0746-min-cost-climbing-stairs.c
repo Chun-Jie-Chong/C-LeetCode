@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int min(int a, int b) { return a > b ? b : a; }
 
 int minCostClimbingStairs(int *cost, int costSize) {

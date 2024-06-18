@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int getSum(int a, int b){
    while (b != 0) {
        int temp = a ^ b;

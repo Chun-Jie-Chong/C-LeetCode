@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Given an array of integers, search for a target value.
     Examples: 

@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 void moveZeroes(int* nums, int numsSize){
     int pos = 0;
     

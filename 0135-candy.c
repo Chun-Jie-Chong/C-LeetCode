@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int candy(int* ratings, int ratingsSize) {
     int* candies = (int*)malloc(sizeof(int) * ratingsSize);
     

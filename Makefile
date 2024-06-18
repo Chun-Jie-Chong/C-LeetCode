@@ -2,25 +2,21 @@
 CC = gcc
 
 # Define the compiler flags
-CFLAGS = -Wall
+CFLAGS = -Wall -g
 
-# Define the source files
+# Find all .c files in the current directory
 SOURCES = $(wildcard *.c)
 
 # Define the object files
 OBJECTS = $(SOURCES:.c=.o)
 
-# Define the executable name
-EXEC = my_program
+# Default target to compile all .c files to .o files
+all: $(OBJECTS)
 
-# The target to build the executable
-$(EXEC): $(OBJECTS)
-	$(CC) $(CFLAGS) -o $@ $^
-
-# Rule to build object files
+# Rule to compile each .c file to .o file
 %.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean up build files
 clean:
-	rm -f $(EXEC) $(OBJECTS)
+	rm -f $(OBJECTS)

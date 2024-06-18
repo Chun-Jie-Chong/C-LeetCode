@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int countGoodStrings(int low, int high, int zero, int one) {
     int mod = 1000000007;
     int* dp = (int*)malloc((high + 1) * sizeof(int));

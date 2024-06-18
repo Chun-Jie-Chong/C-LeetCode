@@ -1,4 +1,18 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <stdbool.h>
+
+
+int sumSquareDigits(int n) {
+    int result = 0;
+    while (n != 0) {
+        int digit = n % 10;
+        result += digit * digit;
+        n /= 10;
+    }
+    return result;
+}
 
 bool isHappy(int n) {
     int slow = n;
@@ -9,14 +23,4 @@ bool isHappy(int n) {
         slow = sumSquareDigits(slow);
     }
     return fast == 1;
-}
-
-int sumSquareDigits(n) {
-    int result = 0;
-    while (n != 0) {
-        int digit = n % 10;
-        result += digit * digit;
-        n /= 10;
-    }
-    return result;
 }

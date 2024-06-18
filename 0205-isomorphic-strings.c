@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given two strings s and t, determine if they are isomorphic.
 

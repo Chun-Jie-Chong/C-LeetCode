@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Given two linked lists where the nodes represent the digits of two numbers,
     add the numbers together and return the sum as a linked list.

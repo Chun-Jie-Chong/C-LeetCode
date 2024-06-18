@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int findDuplicate(int* nums, int numsSize){
     int slow = nums[0];
     int fast = nums[nums[0]];

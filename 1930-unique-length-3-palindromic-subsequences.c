@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int countPalindromicSubsequence(char * s){
     int n = strlen(s);
     int i, j;

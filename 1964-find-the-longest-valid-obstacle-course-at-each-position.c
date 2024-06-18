@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int upperBound(int *arr, int size, int target) {
     int left = 0, right = size - 1;
     while (left <= right) {

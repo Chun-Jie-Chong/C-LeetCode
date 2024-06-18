@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /**
  * Given the head of a singly linked list, reverse the list, and return the
  * reversed list.

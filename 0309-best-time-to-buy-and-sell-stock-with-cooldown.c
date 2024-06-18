@@ -1,4 +1,12 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <limits.h>
+
+// C doesn't have a built-in max function
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
 
 int maxProfit(int* prices, int pricesSize){
     int sold = 0;
@@ -14,7 +22,3 @@ int maxProfit(int* prices, int pricesSize){
     return max(sold, rest);
 }
 
-// C doesn't have a built-in max function
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}

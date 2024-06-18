@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 
 struct ListNode {
     int val;

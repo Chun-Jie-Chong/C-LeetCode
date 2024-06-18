@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Given a 2d matrix if an element is 0, set it's entire row and column to 0 as
     well.

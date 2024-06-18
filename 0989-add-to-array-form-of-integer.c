@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int* addToArrayForm(int* A, int ASize, int K, int* returnSize) {
     // Calculate the maximum size of the result array
     int maxSize = (ASize > 6) ? ASize + 2 : 8;  // Maximum 6 digits in K, plus 2 for potential carry.

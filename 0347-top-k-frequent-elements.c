@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 // A structure to represent an element of the heap.
 typedef struct {
     int num;

@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Given a binary tree, return the right side view of it (the nodes which can 
     be seen in front when looking from the right).

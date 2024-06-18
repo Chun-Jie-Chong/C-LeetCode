@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 // C does not have a predefined min and max function
 int max(int a, int b) {
     return (a > b) ? a : b;

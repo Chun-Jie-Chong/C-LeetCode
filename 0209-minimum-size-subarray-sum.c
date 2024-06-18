@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given an array of positive integers nums and a positive integer target, return 
 the minimal length of a contiguous subarray of which the sum is greater than or 

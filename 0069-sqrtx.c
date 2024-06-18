@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int mySqrt(int x){
     int l = 0;
     int r = x;

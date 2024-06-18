@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 // C doesn't have a built-in max function
 int max(int a, int b) {
     return (a > b) ? a : b;

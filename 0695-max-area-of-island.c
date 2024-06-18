@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Return the maximum area of an island in grid. If there is no island, return 0.
 Time: O(n^2)

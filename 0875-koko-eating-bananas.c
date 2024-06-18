@@ -1,3 +1,7 @@
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+
 /*
     Given an array of bananas piles containing differing amounts of bananas and
     'h' hours to eat all of them.

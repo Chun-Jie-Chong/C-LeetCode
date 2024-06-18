@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int cmp(const void *a, const void *b) {
     const char **s1 = *(const char ***)a, **s2 = *(const char ***)b;
     int c = strcmp(s1[0], s2[0]);

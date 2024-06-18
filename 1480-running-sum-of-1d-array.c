@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /**
  * Given an array nums. We define a running sum of an array as
  * runningSum[i] = sum(nums[0]…nums[i]).

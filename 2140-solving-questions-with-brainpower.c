@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 long long mostPoints(int** questions, int questionsSize, int* questionsColSize) {
     int n = questionsSize;
     long long* dp = (long long*)malloc((n + 1) * sizeof(long long));

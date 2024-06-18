@@ -1,3 +1,7 @@
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 /*
 Return the sum of all the scores on the record after applying all the operations.
 

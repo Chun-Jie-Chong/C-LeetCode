@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Return the fewest number of coins that you need to make up that amount.
 Time; O(nm) where n is the amount desired and m the number of coins

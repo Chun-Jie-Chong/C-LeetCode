@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 Given the root of a binary tree, return the maximum path sum of any non-empty path.
 Time: O(n)

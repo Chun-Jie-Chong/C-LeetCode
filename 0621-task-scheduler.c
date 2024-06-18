@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int leastInterval(char *tasks, int tasksSize, int n) {
     int taskCount[26] = {0};
 

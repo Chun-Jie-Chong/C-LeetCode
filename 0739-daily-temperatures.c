@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
     Given an array of temperatures, find the number of days after which the
     temperature becomes more than temperature of that day.

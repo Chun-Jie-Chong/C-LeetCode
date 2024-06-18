@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 int evalRPN(char ** tokens, int tokensSize){
     long int stk[tokensSize];
     

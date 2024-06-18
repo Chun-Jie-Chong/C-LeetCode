@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 /*
 You are given two binary trees root1 and root2.
 Return the merged tree

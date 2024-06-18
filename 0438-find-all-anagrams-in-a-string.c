@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include <stdbool.h>
 
 #define TO_INDEX(c) c - 'a'
