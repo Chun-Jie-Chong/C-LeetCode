@@ -1,0 +1,584 @@
+Analyzing and compiling 0002-add-two-numbers.c to 0002-add-two-numbers.o
+Compilation and analysis of 0002-add-two-numbers.c succeeded
+Analyzing and compiling 0003-longest-substring-without-repeating-characters.c to 0003-longest-substring-without-repeating-characters.o
+Compilation and analysis of 0003-longest-substring-without-repeating-characters.c succeeded
+Analyzing and compiling 0004-median-of-two-sorted-arrays.c to 0004-median-of-two-sorted-arrays.o
+Compilation and analysis of 0004-median-of-two-sorted-arrays.c succeeded
+Analyzing and compiling 0005-longest-palindromic-substring.c to 0005-longest-palindromic-substring.o
+Compilation and analysis of 0005-longest-palindromic-substring.c succeeded
+Analyzing and compiling 0007-reverse-integer.c to 0007-reverse-integer.o
+Compilation and analysis of 0007-reverse-integer.c succeeded
+Analyzing and compiling 0009-palindrome-number.c to 0009-palindrome-number.o
+0009-palindrome-number.c:17:22: warning: Division by zero [core.DivideZero]
+        int left = x / div;
+                   ~~^~~~~
+1 warning generated.
+Compilation and analysis of 0009-palindrome-number.c succeeded
+Analyzing and compiling 0010-regular-expression-matching.c to 0010-regular-expression-matching.o
+Compilation and analysis of 0010-regular-expression-matching.c succeeded
+Analyzing and compiling 0011-container-with-most-water.c to 0011-container-with-most-water.o
+Compilation and analysis of 0011-container-with-most-water.c succeeded
+Analyzing and compiling 0014-longest-common-prefix.c to 0014-longest-common-prefix.o
+Compilation and analysis of 0014-longest-common-prefix.c succeeded
+Analyzing and compiling 0015-3sum.c to 0015-3sum.o
+Compilation and analysis of 0015-3sum.c succeeded
+Analyzing and compiling 0019-remove-nth-node-from-end-of-list.c to 0019-remove-nth-node-from-end-of-list.o
+0019-remove-nth-node-from-end-of-list.c:36:22: warning: Access to field 'next' results in a dereference of a null pointer (loaded from field 'next') [core.NullDereference]
+        slow->next = slow->next->next;
+                     ^~~~~~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0019-remove-nth-node-from-end-of-list.c succeeded
+Analyzing and compiling 0021-merge-two-sorted-lists.c to 0021-merge-two-sorted-lists.o
+Compilation and analysis of 0021-merge-two-sorted-lists.c succeeded
+Analyzing and compiling 0022-generate-parentheses.c to 0022-generate-parentheses.o
+Compilation and analysis of 0022-generate-parentheses.c succeeded
+Analyzing and compiling 0023-merge-k-sorted-lists.c to 0023-merge-k-sorted-lists.o
+0023-merge-k-sorted-lists.c:75:45: warning: Array access (from variable 'mergedLists') results in an undefined pointer dereference [core.NullDereference]
+            mergedLists[mergedListsIndex++] = mergeLists(l1, l2);
+            ~~~~~~~~~~~                     ^
+1 warning generated.
+Compilation and analysis of 0023-merge-k-sorted-lists.c succeeded
+Analyzing and compiling 0024-swap-nodes-in-pairs.c to 0024-swap-nodes-in-pairs.o
+Compilation and analysis of 0024-swap-nodes-in-pairs.c succeeded
+Analyzing and compiling 0025-reverse-nodes-in-k-group.c to 0025-reverse-nodes-in-k-group.o
+0025-reverse-nodes-in-k-group.c:62:5: warning: Address of stack memory associated with local variable 'dummy' returned to caller [core.StackAddressEscape]
+    return dummy.next;
+    ^~~~~~~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0025-reverse-nodes-in-k-group.c succeeded
+Analyzing and compiling 0026-remove-duplicates-from-sorted-array.c to 0026-remove-duplicates-from-sorted-array.o
+Compilation and analysis of 0026-remove-duplicates-from-sorted-array.c succeeded
+Analyzing and compiling 0027-remove-element.c to 0027-remove-element.o
+Compilation and analysis of 0027-remove-element.c succeeded
+Analyzing and compiling 0028-find-the-index-of-the-first-occurrence-in-a-string.c to 0028-find-the-index-of-the-first-occurrence-in-a-string.o
+Compilation and analysis of 0028-find-the-index-of-the-first-occurrence-in-a-string.c succeeded
+Analyzing and compiling 0033-search-in-rotated-sorted-array.c to 0033-search-in-rotated-sorted-array.o
+Compilation and analysis of 0033-search-in-rotated-sorted-array.c succeeded
+Analyzing and compiling 0035-search-insert-position.c to 0035-search-insert-position.o
+Compilation and analysis of 0035-search-insert-position.c succeeded
+Analyzing and compiling 0036-valid-sudoku.c to 0036-valid-sudoku.o
+Compilation and analysis of 0036-valid-sudoku.c succeeded
+Analyzing and compiling 0039-combination-sum.c to 0039-combination-sum.o
+Compilation and analysis of 0039-combination-sum.c succeeded
+Analyzing and compiling 0040-combination-sum-ii.c to 0040-combination-sum-ii.o
+Compilation and analysis of 0040-combination-sum-ii.c succeeded
+Analyzing and compiling 0041-first-missing-positive.c to 0041-first-missing-positive.o
+Compilation and analysis of 0041-first-missing-positive.c succeeded
+Analyzing and compiling 0043-multiply-strings.c to 0043-multiply-strings.o
+0043-multiply-strings.c:30:16: warning: Potential leak of memory pointed to by 'result' [unix.Malloc]
+        return "0";
+               ^~~
+0043-multiply-strings.c:30:16: warning: Potential leak of memory pointed to by 'res' [unix.Malloc]
+        return "0";
+               ^~~
+2 warnings generated.
+Compilation and analysis of 0043-multiply-strings.c succeeded
+Analyzing and compiling 0045-jump-game-ii.c to 0045-jump-game-ii.o
+Compilation and analysis of 0045-jump-game-ii.c succeeded
+Analyzing and compiling 0046-permutations.c to 0046-permutations.o
+Compilation and analysis of 0046-permutations.c succeeded
+Analyzing and compiling 0048-rotate-image.c to 0048-rotate-image.o
+Compilation and analysis of 0048-rotate-image.c succeeded
+Analyzing and compiling 0050-powx-n.c to 0050-powx-n.o
+0050-powx-n.c:4:10: warning: Value stored to 'exponent' during its initialization is never read [deadcode.DeadStores]
+    long exponent = abs(n);
+         ^~~~~~~~   ~~~~~~
+1 warning generated.
+Compilation and analysis of 0050-powx-n.c succeeded
+Analyzing and compiling 0051-n-queens.c to 0051-n-queens.o
+0051-n-queens.c:33:19: warning: The left operand of '<' is a garbage value [core.UndefinedBinaryOperatorResult]
+    for (int x; x < 4; x++) {
+                ~ ^
+1 warning generated.
+Compilation and analysis of 0051-n-queens.c succeeded
+Analyzing and compiling 0052-n-queens-ii.c to 0052-n-queens-ii.o
+0052-n-queens-ii.c:23:13: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+        if (board[i-k][j-k])
+            ^~~~~~~~~~~~~~~
+0052-n-queens-ii.c:27:13: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+        if (board[i-k][j+k])
+            ^~~~~~~~~~~~~~~
+2 warnings generated.
+Compilation and analysis of 0052-n-queens-ii.c succeeded
+Analyzing and compiling 0053-maximum-subarray.c to 0053-maximum-subarray.o
+Compilation and analysis of 0053-maximum-subarray.c succeeded
+Analyzing and compiling 0054-spiral-matrix.c to 0054-spiral-matrix.o
+Compilation and analysis of 0054-spiral-matrix.c succeeded
+Analyzing and compiling 0055-jump-game.c to 0055-jump-game.o
+Compilation and analysis of 0055-jump-game.c succeeded
+Analyzing and compiling 0056-merge-intervals.c to 0056-merge-intervals.o
+Compilation and analysis of 0056-merge-intervals.c succeeded
+Analyzing and compiling 0057-insert-interval.c to 0057-insert-interval.o
+Compilation and analysis of 0057-insert-interval.c succeeded
+Analyzing and compiling 0058-length-of-last-word.c to 0058-length-of-last-word.o
+Compilation and analysis of 0058-length-of-last-word.c succeeded
+Analyzing and compiling 0058-length-of-the-last-word.c to 0058-length-of-the-last-word.o
+Compilation and analysis of 0058-length-of-the-last-word.c succeeded
+Analyzing and compiling 0062-unique-paths.c to 0062-unique-paths.o
+Compilation and analysis of 0062-unique-paths.c succeeded
+Analyzing and compiling 0066-plus-one.c to 0066-plus-one.o
+Compilation and analysis of 0066-plus-one.c succeeded
+Analyzing and compiling 0067-add-binary.c to 0067-add-binary.o
+Compilation and analysis of 0067-add-binary.c succeeded
+Analyzing and compiling 0069-sqrtx.c to 0069-sqrtx.o
+Compilation and analysis of 0069-sqrtx.c succeeded
+Analyzing and compiling 0070-climbing-stairs.c to 0070-climbing-stairs.o
+Compilation and analysis of 0070-climbing-stairs.c succeeded
+Analyzing and compiling 0072-edit-distance.c to 0072-edit-distance.o
+Compilation and analysis of 0072-edit-distance.c succeeded
+Analyzing and compiling 0073-set-matrix-zeroes.c to 0073-set-matrix-zeroes.o
+Compilation and analysis of 0073-set-matrix-zeroes.c succeeded
+Analyzing and compiling 0074-search-a-2d-matrix.c to 0074-search-a-2d-matrix.o
+Compilation and analysis of 0074-search-a-2d-matrix.c succeeded
+Analyzing and compiling 0075-sort-colors.c to 0075-sort-colors.o
+Compilation and analysis of 0075-sort-colors.c succeeded
+Analyzing and compiling 0076-minimum-window-substring.c to 0076-minimum-window-substring.o
+0076-minimum-window-substring.c:51:21: warning: Use of memory allocated with size zero [unix.Malloc]
+        ans[maxLen] = '\0';
+                    ^
+1 warning generated.
+Compilation and analysis of 0076-minimum-window-substring.c succeeded
+Analyzing and compiling 0078-subsets.c to 0078-subsets.o
+0078-subsets.c:45:26: warning: Use of memory allocated with size zero [unix.Malloc]
+            result[lead] = new_subset;
+                         ^
+1 warning generated.
+Compilation and analysis of 0078-subsets.c succeeded
+Analyzing and compiling 0079-word-search.c to 0079-word-search.o
+Compilation and analysis of 0079-word-search.c succeeded
+Analyzing and compiling 0083-remove-duplicates-from-sorted-list.c to 0083-remove-duplicates-from-sorted-list.o
+Compilation and analysis of 0083-remove-duplicates-from-sorted-list.c succeeded
+Analyzing and compiling 0084-largest-rectangle-in-histogram.c to 0084-largest-rectangle-in-histogram.o
+0084-largest-rectangle-in-histogram.c:81:9: warning: Potential leak of memory pointed to by 'st' [unix.Malloc]
+        return ans;
+               ^~~
+1 warning generated.
+Compilation and analysis of 0084-largest-rectangle-in-histogram.c succeeded
+Analyzing and compiling 0088-merge-sorted-array.c to 0088-merge-sorted-array.o
+Compilation and analysis of 0088-merge-sorted-array.c succeeded
+Analyzing and compiling 0090-subsets-ii.c to 0090-subsets-ii.o
+Compilation and analysis of 0090-subsets-ii.c succeeded
+Analyzing and compiling 0091-decode-ways.c to 0091-decode-ways.o
+0091-decode-ways.c:31:5: warning: Potential leak of memory pointed to by 'dp' [unix.Malloc]
+    return dp[0];
+    ^~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0091-decode-ways.c succeeded
+Analyzing and compiling 0094-binary-tree-inorder-traversal.c to 0094-binary-tree-inorder-traversal.o
+Compilation and analysis of 0094-binary-tree-inorder-traversal.c succeeded
+Analyzing and compiling 0096-unique-binary-search-trees.c to 0096-unique-binary-search-trees.o
+0096-unique-binary-search-trees.c:22:5: warning: Potential leak of memory pointed to by 'dp' [unix.Malloc]
+    return dp[n];
+    ^~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0096-unique-binary-search-trees.c succeeded
+Analyzing and compiling 0097-interleaving-string.c to 0097-interleaving-string.o
+Compilation and analysis of 0097-interleaving-string.c succeeded
+Analyzing and compiling 0098-validate-binary-search-tree.c to 0098-validate-binary-search-tree.o
+Compilation and analysis of 0098-validate-binary-search-tree.c succeeded
+Analyzing and compiling 0100-same-tree.c to 0100-same-tree.o
+Compilation and analysis of 0100-same-tree.c succeeded
+Analyzing and compiling 0104-maximum-depth-of-binary-tree.c to 0104-maximum-depth-of-binary-tree.o
+Compilation and analysis of 0104-maximum-depth-of-binary-tree.c succeeded
+Analyzing and compiling 0108-convert-sorted-array-to-binary-search-tree.c to 0108-convert-sorted-array-to-binary-search-tree.o
+Compilation and analysis of 0108-convert-sorted-array-to-binary-search-tree.c succeeded
+Analyzing and compiling 0110-balanced-binary-tree.c to 0110-balanced-binary-tree.o
+Compilation and analysis of 0110-balanced-binary-tree.c succeeded
+Analyzing and compiling 0112-path-sum.c to 0112-path-sum.o
+Compilation and analysis of 0112-path-sum.c succeeded
+Analyzing and compiling 0115-distinct-subsequences.c to 0115-distinct-subsequences.o
+Compilation and analysis of 0115-distinct-subsequences.c succeeded
+Analyzing and compiling 0118-pascals-triangle.c to 0118-pascals-triangle.o
+0118-pascals-triangle.c:13:28: warning: Result of 'malloc' is converted to a pointer of type 'int', which is incompatible with sizeof operand type 'int *' [unix.MallocSizeof]
+    (*returnColumnSizes) = malloc(sizeof(int*)*numRows);
+                           ^~~~~~ ~~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0118-pascals-triangle.c succeeded
+Analyzing and compiling 0120-triangle.c to 0120-triangle.o
+Compilation and analysis of 0120-triangle.c succeeded
+Analyzing and compiling 0121-best-time-to-buy-and-sell-stock.c to 0121-best-time-to-buy-and-sell-stock.o
+Compilation and analysis of 0121-best-time-to-buy-and-sell-stock.c succeeded
+Analyzing and compiling 0122-best-time-to-buy-and-sell-stock-ii.c to 0122-best-time-to-buy-and-sell-stock-ii.o
+Compilation and analysis of 0122-best-time-to-buy-and-sell-stock-ii.c succeeded
+Analyzing and compiling 0124-binary-tree-maximum-path-sum.c to 0124-binary-tree-maximum-path-sum.o
+Compilation and analysis of 0124-binary-tree-maximum-path-sum.c succeeded
+Analyzing and compiling 0125-valid-palindrome.c to 0125-valid-palindrome.o
+Compilation and analysis of 0125-valid-palindrome.c succeeded
+Analyzing and compiling 0129-sum-root-to-leaf-numbers.c to 0129-sum-root-to-leaf-numbers.o
+Compilation and analysis of 0129-sum-root-to-leaf-numbers.c succeeded
+Analyzing and compiling 0130-surrounded-regions.c to 0130-surrounded-regions.o
+Compilation and analysis of 0130-surrounded-regions.c succeeded
+Analyzing and compiling 0133-clone-graph.c to 0133-clone-graph.o
+Compilation and analysis of 0133-clone-graph.c succeeded
+Analyzing and compiling 0134-gas-station.c to 0134-gas-station.o
+Compilation and analysis of 0134-gas-station.c succeeded
+Analyzing and compiling 0135-candy.c to 0135-candy.o
+Compilation and analysis of 0135-candy.c succeeded
+Analyzing and compiling 0136-single-number.c to 0136-single-number.o
+Compilation and analysis of 0136-single-number.c succeeded
+Analyzing and compiling 0138-copy-list-with-random-pointer.c to 0138-copy-list-with-random-pointer.o
+Compilation and analysis of 0138-copy-list-with-random-pointer.c succeeded
+Analyzing and compiling 0141-linked-list-cycle.c to 0141-linked-list-cycle.o
+Compilation and analysis of 0141-linked-list-cycle.c succeeded
+Analyzing and compiling 0142-linked-list-cycle-ii.c to 0142-linked-list-cycle-ii.o
+Compilation and analysis of 0142-linked-list-cycle-ii.c succeeded
+Analyzing and compiling 0143-reorder-list.c to 0143-reorder-list.o
+0143-reorder-list.c:21:22: warning: Value stored to 'next' during its initialization is never read [deadcode.DeadStores]
+    struct ListNode* next = curr->next;
+                     ^~~~   ~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0143-reorder-list.c succeeded
+Analyzing and compiling 0148-sort-list.c to 0148-sort-list.o
+0148-sort-list.c:69:16: warning: Access to field 'next' results in a dereference of a null pointer (loaded from variable 'prev') [core.NullDereference]
+    prev->next = NULL;
+    ~~~~       ^
+1 warning generated.
+Compilation and analysis of 0148-sort-list.c succeeded
+Analyzing and compiling 0150-evaluate-reverse-polish-notation.c to 0150-evaluate-reverse-polish-notation.o
+0150-evaluate-reverse-polish-notation.c:13:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int first = stk[stkIndex];
+            ^~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:15:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int second = stk[stkIndex];
+            ^~~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:21:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int first = stk[stkIndex];
+            ^~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:23:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int second = stk[stkIndex];
+            ^~~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:29:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            long first = stk[stkIndex];
+            ^~~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:31:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int second = stk[stkIndex];
+            ^~~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:38:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int first = stk[stkIndex];
+            ^~~~~~~~~   ~~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:40:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+            int second = stk[stkIndex];
+            ^~~~~~~~~~   ~~~~~~~~~~~~~
+8 warnings generated.
+Compilation and analysis of 0150-evaluate-reverse-polish-notation.c succeeded
+Analyzing and compiling 0152-maximum-product-subarray.c to 0152-maximum-product-subarray.o
+Compilation and analysis of 0152-maximum-product-subarray.c succeeded
+Analyzing and compiling 0153-find-minimum-in-rotated-sorted-array.c to 0153-find-minimum-in-rotated-sorted-array.o
+Compilation and analysis of 0153-find-minimum-in-rotated-sorted-array.c succeeded
+Analyzing and compiling 0155-min-stack.c to 0155-min-stack.o
+Compilation and analysis of 0155-min-stack.c succeeded
+Analyzing and compiling 0160-intersection-of-two-linked-lists.c to 0160-intersection-of-two-linked-lists.o
+Compilation and analysis of 0160-intersection-of-two-linked-lists.c succeeded
+Analyzing and compiling 0167-two-sum-ii-input-array-is-sorted.c to 0167-two-sum-ii-input-array-is-sorted.o
+Compilation and analysis of 0167-two-sum-ii-input-array-is-sorted.c succeeded
+Analyzing and compiling 0169-majority-element.c to 0169-majority-element.o
+Compilation and analysis of 0169-majority-element.c succeeded
+Analyzing and compiling 0179-largest-number.c to 0179-largest-number.o
+Compilation and analysis of 0179-largest-number.c succeeded
+Analyzing and compiling 0190-reverse-bits.c to 0190-reverse-bits.o
+Compilation and analysis of 0190-reverse-bits.c succeeded
+Analyzing and compiling 0191-number-of-1-bits.c to 0191-number-of-1-bits.o
+Compilation and analysis of 0191-number-of-1-bits.c succeeded
+Analyzing and compiling 0198-house-robber.c to 0198-house-robber.o
+Compilation and analysis of 0198-house-robber.c succeeded
+Analyzing and compiling 0199-binary-tree-right-side-view.c to 0199-binary-tree-right-side-view.o
+Compilation and analysis of 0199-binary-tree-right-side-view.c succeeded
+Analyzing and compiling 0200-number-of-islands.c to 0200-number-of-islands.o
+Compilation and analysis of 0200-number-of-islands.c succeeded
+Analyzing and compiling 0202-happy-number.c to 0202-happy-number.o
+Compilation and analysis of 0202-happy-number.c succeeded
+Analyzing and compiling 0205-isomorphic-strings.c to 0205-isomorphic-strings.o
+Compilation and analysis of 0205-isomorphic-strings.c succeeded
+Analyzing and compiling 0206-reverse-linked-list.c to 0206-reverse-linked-list.o
+Compilation and analysis of 0206-reverse-linked-list.c succeeded
+Analyzing and compiling 0207-course-schedule.c to 0207-course-schedule.o
+0207-course-schedule.c:19:17: warning: 1st function call argument is an uninitialized value [core.CallAndMessage]
+            if (hasLoops(cmap[idx][i], cmap, cpr, visited)) {
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0207-course-schedule.c succeeded
+Analyzing and compiling 0208-implement-trie-prefix-tree.c to 0208-implement-trie-prefix-tree.o
+Compilation and analysis of 0208-implement-trie-prefix-tree.c succeeded
+Analyzing and compiling 0209-minimum-size-subarray-sum.c to 0209-minimum-size-subarray-sum.o
+Compilation and analysis of 0209-minimum-size-subarray-sum.c succeeded
+Analyzing and compiling 0212-word-search-ii.c to 0212-word-search-ii.o
+0212-word-search-ii.c:91:19: warning: Potential leak of memory pointed to by 'trie' [unix.Malloc]
+    *returnSize = resultSize;
+                  ^~~~~~~~~~
+0212-word-search-ii.c:91:19: warning: Potential leak of memory pointed to by 'visited' [unix.Malloc]
+    *returnSize = resultSize;
+                  ^~~~~~~~~~
+2 warnings generated.
+Compilation and analysis of 0212-word-search-ii.c succeeded
+Analyzing and compiling 0213-house-robber-ii.c to 0213-house-robber-ii.o
+Compilation and analysis of 0213-house-robber-ii.c succeeded
+Analyzing and compiling 0215-kth-largest-element-in-an-array.c to 0215-kth-largest-element-in-an-array.o
+Compilation and analysis of 0215-kth-largest-element-in-an-array.c succeeded
+Analyzing and compiling 0226-invert-binary-tree.c to 0226-invert-binary-tree.o
+Compilation and analysis of 0226-invert-binary-tree.c succeeded
+Analyzing and compiling 0230-kth-smallest-element-in-a-bst.c to 0230-kth-smallest-element-in-a-bst.o
+Compilation and analysis of 0230-kth-smallest-element-in-a-bst.c succeeded
+Analyzing and compiling 0234-palindrome-linked-list.c to 0234-palindrome-linked-list.o
+Compilation and analysis of 0234-palindrome-linked-list.c succeeded
+Analyzing and compiling 0235-lowest-common-ancestor-of-a-binary-search-tree.c to 0235-lowest-common-ancestor-of-a-binary-search-tree.o
+Compilation and analysis of 0235-lowest-common-ancestor-of-a-binary-search-tree.c succeeded
+Analyzing and compiling 0238-product-of-array-except-self.c to 0238-product-of-array-except-self.o
+Compilation and analysis of 0238-product-of-array-except-self.c succeeded
+Analyzing and compiling 0239-sliding-window-maximum.c to 0239-sliding-window-maximum.o
+Compilation and analysis of 0239-sliding-window-maximum.c succeeded
+Analyzing and compiling 0242-valid-anagram.c to 0242-valid-anagram.o
+Compilation and analysis of 0242-valid-anagram.c succeeded
+Analyzing and compiling 0263-ugly-number.c to 0263-ugly-number.o
+Compilation and analysis of 0263-ugly-number.c succeeded
+Analyzing and compiling 0268-missing-number.c to 0268-missing-number.o
+Compilation and analysis of 0268-missing-number.c succeeded
+Analyzing and compiling 0279-perfect-squares.c to 0279-perfect-squares.o
+Compilation and analysis of 0279-perfect-squares.c succeeded
+Analyzing and compiling 0283-move-zeroes.c to 0283-move-zeroes.o
+Compilation and analysis of 0283-move-zeroes.c succeeded
+Analyzing and compiling 0287-find-the-duplicate-number.c to 0287-find-the-duplicate-number.o
+Compilation and analysis of 0287-find-the-duplicate-number.c succeeded
+Analyzing and compiling 0297-serialize-and-deserialize-binary-tree.c to 0297-serialize-and-deserialize-binary-tree.o
+Compilation and analysis of 0297-serialize-and-deserialize-binary-tree.c succeeded
+Analyzing and compiling 0300-longest-increasing-subsequence.c to 0300-longest-increasing-subsequence.o
+Compilation and analysis of 0300-longest-increasing-subsequence.c succeeded
+Analyzing and compiling 0309-best-time-to-buy-and-sell-stock-with-cooldown.c to 0309-best-time-to-buy-and-sell-stock-with-cooldown.o
+Compilation and analysis of 0309-best-time-to-buy-and-sell-stock-with-cooldown.c succeeded
+Analyzing and compiling 0312-burst-balloons.c to 0312-burst-balloons.o
+Compilation and analysis of 0312-burst-balloons.c succeeded
+Analyzing and compiling 0322-coin-change.c to 0322-coin-change.o
+Compilation and analysis of 0322-coin-change.c succeeded
+Analyzing and compiling 0329-longest-increasing-path-in-a-matrix.c to 0329-longest-increasing-path-in-a-matrix.o
+0329-longest-increasing-path-in-a-matrix.c:42:12: warning: Potential leak of memory pointed to by 'dp' [unix.Malloc]
+    return ans;
+           ^~~
+1 warning generated.
+Compilation and analysis of 0329-longest-increasing-path-in-a-matrix.c succeeded
+Analyzing and compiling 0332-reconstruct-itinerary.c to 0332-reconstruct-itinerary.o
+Compilation and analysis of 0332-reconstruct-itinerary.c succeeded
+Analyzing and compiling 0338-counting-bits.c to 0338-counting-bits.o
+Compilation and analysis of 0338-counting-bits.c succeeded
+Analyzing and compiling 0343-integer-break.c to 0343-integer-break.o
+Compilation and analysis of 0343-integer-break.c succeeded
+Analyzing and compiling 0344-reverse-string.c to 0344-reverse-string.o
+Compilation and analysis of 0344-reverse-string.c succeeded
+Analyzing and compiling 0347-top-k-frequent-elements.c to 0347-top-k-frequent-elements.o
+Compilation and analysis of 0347-top-k-frequent-elements.c succeeded
+Analyzing and compiling 0371-sum-of-two-integers.c to 0371-sum-of-two-integers.o
+Compilation and analysis of 0371-sum-of-two-integers.c succeeded
+Analyzing and compiling 0377-combination-sum-iv.c to 0377-combination-sum-iv.o
+Compilation and analysis of 0377-combination-sum-iv.c succeeded
+Analyzing and compiling 0392-is-subsequence.c to 0392-is-subsequence.o
+Compilation and analysis of 0392-is-subsequence.c succeeded
+Analyzing and compiling 0409-longest-palindrome.c to 0409-longest-palindrome.o
+Compilation and analysis of 0409-longest-palindrome.c succeeded
+Analyzing and compiling 0416-partition-equal-subset-sum.c to 0416-partition-equal-subset-sum.o
+0416-partition-equal-subset-sum.c:28:21: warning: Branch condition evaluates to a garbage value [core.uninitialized.Branch]
+            dp[j] = dp[j] || dp[j - nums[i]];
+                    ^~~~~
+1 warning generated.
+Compilation and analysis of 0416-partition-equal-subset-sum.c succeeded
+Analyzing and compiling 0417-pacific-atlantic-water-flow.c to 0417-pacific-atlantic-water-flow.o
+Compilation and analysis of 0417-pacific-atlantic-water-flow.c succeeded
+Analyzing and compiling 0424-longest-repeating-character-replacement.c to 0424-longest-repeating-character-replacement.o
+Compilation and analysis of 0424-longest-repeating-character-replacement.c succeeded
+Analyzing and compiling 0435-non-overlapping-intervals.c to 0435-non-overlapping-intervals.o
+Compilation and analysis of 0435-non-overlapping-intervals.c succeeded
+Analyzing and compiling 0438-find-all-anagrams-in-a-string.c to 0438-find-all-anagrams-in-a-string.o
+0438-find-all-anagrams-in-a-string.c:30:9: warning: Undefined or garbage value returned to caller [core.uninitialized.UndefReturn]
+        return ans;
+        ^~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 0438-find-all-anagrams-in-a-string.c succeeded
+Analyzing and compiling 0448-find-all-numbers-disappeared-in-an-array.c to 0448-find-all-numbers-disappeared-in-an-array.o
+Compilation and analysis of 0448-find-all-numbers-disappeared-in-an-array.c succeeded
+Analyzing and compiling 0463-island-perimeter.c to 0463-island-perimeter.o
+Compilation and analysis of 0463-island-perimeter.c succeeded
+Analyzing and compiling 0494-target-sum.c to 0494-target-sum.o
+Compilation and analysis of 0494-target-sum.c succeeded
+Analyzing and compiling 0518-coin-change-ii.c to 0518-coin-change-ii.o
+Compilation and analysis of 0518-coin-change-ii.c succeeded
+Analyzing and compiling 0523-continuous-subarray-sum.c to 0523-continuous-subarray-sum.o
+Compilation and analysis of 0523-continuous-subarray-sum.c succeeded
+Analyzing and compiling 0543-diameter-of-binary-tree.c to 0543-diameter-of-binary-tree.o
+Compilation and analysis of 0543-diameter-of-binary-tree.c succeeded
+Analyzing and compiling 0567-permutation-in-string.c to 0567-permutation-in-string.o
+Compilation and analysis of 0567-permutation-in-string.c succeeded
+Analyzing and compiling 0572-subtree-of-another-tree.c to 0572-subtree-of-another-tree.o
+Compilation and analysis of 0572-subtree-of-another-tree.c succeeded
+Analyzing and compiling 0589-n-ary-tree-preorder-traversal.c to 0589-n-ary-tree-preorder-traversal.o
+Compilation and analysis of 0589-n-ary-tree-preorder-traversal.c succeeded
+Analyzing and compiling 0605-can-place-flowers.c to 0605-can-place-flowers.o
+Compilation and analysis of 0605-can-place-flowers.c succeeded
+Analyzing and compiling 0617-merge-two-binary-trees.c to 0617-merge-two-binary-trees.o
+Compilation and analysis of 0617-merge-two-binary-trees.c succeeded
+Analyzing and compiling 0621-task-scheduler.c to 0621-task-scheduler.o
+Compilation and analysis of 0621-task-scheduler.c succeeded
+Analyzing and compiling 0647-palindromic-substrings.c to 0647-palindromic-substrings.o
+Compilation and analysis of 0647-palindromic-substrings.c succeeded
+Analyzing and compiling 0673-number-of-longest-increasing-subsequence.c to 0673-number-of-longest-increasing-subsequence.o
+Compilation and analysis of 0673-number-of-longest-increasing-subsequence.c succeeded
+Analyzing and compiling 0678-valid-parenthesis-string.c to 0678-valid-parenthesis-string.o
+Compilation and analysis of 0678-valid-parenthesis-string.c succeeded
+Analyzing and compiling 0680-valid-palindrome-ii.c to 0680-valid-palindrome-ii.o
+Compilation and analysis of 0680-valid-palindrome-ii.c succeeded
+Analyzing and compiling 0682-baseball-game.c to 0682-baseball-game.o
+0682-baseball-game.c:50:26: warning: Access to field 'val' results in a dereference of a null pointer (loaded from variable 's') [core.NullDereference]
+            int to_add = s->val + (s->next)->val;
+                         ^~~~~~
+0682-baseball-game.c:50:35: warning: Access to field 'val' results in a dereference of a null pointer (loaded from field 'next') [core.NullDereference]
+            int to_add = s->val + (s->next)->val;
+                                  ^~~~~~~~~~~~~~
+0682-baseball-game.c:53:26: warning: Access to field 'val' results in a dereference of a null pointer (loaded from variable 's') [core.NullDereference]
+            s = add(s, 2*(s->val));
+                         ^~~~~~~~
+0682-baseball-game.c:75:5: warning: Potential leak of memory pointed to by 's' [unix.Malloc]
+    return sum(s);
+    ^~~~~~~~~~~~~
+0682-baseball-game.c:75:5: warning: Potential leak of memory pointed to by 's' [unix.Malloc]
+    return sum(s);
+    ^~~~~~~~~~~~~
+0682-baseball-game.c:75:5: warning: Potential leak of memory pointed to by 's' [unix.Malloc]
+    return sum(s);
+    ^~~~~~~~~~~~~
+0682-baseball-game.c:75:5: warning: Potential leak of memory pointed to by 's' [unix.Malloc]
+    return sum(s);
+    ^~~~~~~~~~~~~
+7 warnings generated.
+Compilation and analysis of 0682-baseball-game.c succeeded
+Analyzing and compiling 0684-redundant-connection.c to 0684-redundant-connection.o
+0684-redundant-connection.c:36:19: warning: Potential leak of memory pointed to by 'parent' [unix.Malloc]
+    *returnSize = 2;
+                  ^
+1 warning generated.
+Compilation and analysis of 0684-redundant-connection.c succeeded
+Analyzing and compiling 0691-stickers-to-spell-word.c to 0691-stickers-to-spell-word.o
+Compilation and analysis of 0691-stickers-to-spell-word.c succeeded
+Analyzing and compiling 0695-max-area-of-island.c to 0695-max-area-of-island.o
+Compilation and analysis of 0695-max-area-of-island.c succeeded
+Analyzing and compiling 0704-binary-search.c to 0704-binary-search.o
+Compilation and analysis of 0704-binary-search.c succeeded
+Analyzing and compiling 0707-design-linked-list.c to 0707-design-linked-list.o
+Compilation and analysis of 0707-design-linked-list.c succeeded
+Analyzing and compiling 0724-find-pivot-index.c to 0724-find-pivot-index.o
+Compilation and analysis of 0724-find-pivot-index.c succeeded
+Analyzing and compiling 0739-daily-temperatures.c to 0739-daily-temperatures.o
+Compilation and analysis of 0739-daily-temperatures.c succeeded
+Analyzing and compiling 0740-delete-and-earn.c to 0740-delete-and-earn.o
+0740-delete-and-earn.c:27:11: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+    dp[1] = freq[1];
+          ^ ~~~~~~~
+1 warning generated.
+Compilation and analysis of 0740-delete-and-earn.c succeeded
+Analyzing and compiling 0746-min-cost-climbing-stairs.c to 0746-min-cost-climbing-stairs.o
+Compilation and analysis of 0746-min-cost-climbing-stairs.c succeeded
+Analyzing and compiling 0763-partition-labels.c to 0763-partition-labels.o
+Compilation and analysis of 0763-partition-labels.c succeeded
+Analyzing and compiling 0837-new-21-game.c to 0837-new-21-game.o
+Compilation and analysis of 0837-new-21-game.c succeeded
+Analyzing and compiling 0846-hand-of-straights.c to 0846-hand-of-straights.o
+Compilation and analysis of 0846-hand-of-straights.c succeeded
+Analyzing and compiling 0853-car-fleet.c to 0853-car-fleet.o
+Compilation and analysis of 0853-car-fleet.c succeeded
+Analyzing and compiling 0875-koko-eating-bananas.c to 0875-koko-eating-bananas.o
+Compilation and analysis of 0875-koko-eating-bananas.c succeeded
+Analyzing and compiling 0876-middle-of-the-linked-list.c to 0876-middle-of-the-linked-list.o
+Compilation and analysis of 0876-middle-of-the-linked-list.c succeeded
+Analyzing and compiling 0881-boats-to-save-people.c to 0881-boats-to-save-people.o
+Compilation and analysis of 0881-boats-to-save-people.c succeeded
+Analyzing and compiling 0912-sort-an-array.c to 0912-sort-an-array.o
+0912-sort-an-array.c:57:11: warning: Potential leak of memory pointed to by 'left' [unix.Malloc]
+    while(j<n2){
+          ^
+0912-sort-an-array.c:63:1: warning: Potential leak of memory pointed to by 'right' [unix.Malloc]
+};
+^
+2 warnings generated.
+Compilation and analysis of 0912-sort-an-array.c succeeded
+Analyzing and compiling 0953-verifying-an-alien-dictionary.c to 0953-verifying-an-alien-dictionary.o
+Compilation and analysis of 0953-verifying-an-alien-dictionary.c succeeded
+Analyzing and compiling 0973-k-closest-points-to-origin.c to 0973-k-closest-points-to-origin.o
+Compilation and analysis of 0973-k-closest-points-to-origin.c succeeded
+Analyzing and compiling 0980-unique-paths-iii.c to 0980-unique-paths-iii.o
+0980-unique-paths-iii.c:51:12: warning: 3rd function call argument is an uninitialized value [core.CallAndMessage]
+    return solve(R, C, endRow, endCol, visited, toVisit, startRow, startCol);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0980-unique-paths-iii.c:51:12: warning: 7th function call argument is an uninitialized value [core.CallAndMessage]
+    return solve(R, C, endRow, endCol, visited, toVisit, startRow, startCol);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+Compilation and analysis of 0980-unique-paths-iii.c succeeded
+Analyzing and compiling 0981-time-based-key-value-store.c to 0981-time-based-key-value-store.o
+Compilation and analysis of 0981-time-based-key-value-store.c succeeded
+Analyzing and compiling 0983-minimum-cost-for-tickets.c to 0983-minimum-cost-for-tickets.o
+Compilation and analysis of 0983-minimum-cost-for-tickets.c succeeded
+Analyzing and compiling 0989-add-to-array-form-of-integer.c to 0989-add-to-array-form-of-integer.o
+Compilation and analysis of 0989-add-to-array-form-of-integer.c succeeded
+Analyzing and compiling 0994-rotting-oranges.c to 0994-rotting-oranges.o
+Compilation and analysis of 0994-rotting-oranges.c succeeded
+Analyzing and compiling 1035-uncrossed-lines.c to 1035-uncrossed-lines.o
+Compilation and analysis of 1035-uncrossed-lines.c succeeded
+Analyzing and compiling 1046-last-stone-weight.c to 1046-last-stone-weight.o
+Compilation and analysis of 1046-last-stone-weight.c succeeded
+Analyzing and compiling 1137-n-th-tribonacci-number.c to 1137-n-th-tribonacci-number.o
+Compilation and analysis of 1137-n-th-tribonacci-number.c succeeded
+Analyzing and compiling 1143-longest-common-subsequence.c to 1143-longest-common-subsequence.o
+Compilation and analysis of 1143-longest-common-subsequence.c succeeded
+Analyzing and compiling 1189-maximum-number-of-balloons.c to 1189-maximum-number-of-balloons.o
+Compilation and analysis of 1189-maximum-number-of-balloons.c succeeded
+Analyzing and compiling 1288-remove-covered-intervals.c to 1288-remove-covered-intervals.o
+Compilation and analysis of 1288-remove-covered-intervals.c succeeded
+Analyzing and compiling 1299-replace-elements-with-greatest-element-on-right-side.c to 1299-replace-elements-with-greatest-element-on-right-side.o
+Compilation and analysis of 1299-replace-elements-with-greatest-element-on-right-side.c succeeded
+Analyzing and compiling 1406-stone-game-iii.c to 1406-stone-game-iii.o
+Compilation and analysis of 1406-stone-game-iii.c succeeded
+Analyzing and compiling 1448-count-good-nodes-in-binary-tree.c to 1448-count-good-nodes-in-binary-tree.o
+Compilation and analysis of 1448-count-good-nodes-in-binary-tree.c succeeded
+Analyzing and compiling 1470-shuffle-the-array.c to 1470-shuffle-the-array.o
+1470-shuffle-the-array.c:9:9: warning: Although the value stored to 'j' is used in the enclosing expression, the value is never actually read from 'j' [deadcode.DeadStores]
+    i = j = k = 0;
+        ^   ~~~~~
+1 warning generated.
+Compilation and analysis of 1470-shuffle-the-array.c succeeded
+Analyzing and compiling 1480-running-sum-of-1d-array.c to 1480-running-sum-of-1d-array.o
+Compilation and analysis of 1480-running-sum-of-1d-array.c succeeded
+Analyzing and compiling 1626-best-team-with-no-conflicts.c to 1626-best-team-with-no-conflicts.o
+Compilation and analysis of 1626-best-team-with-no-conflicts.c succeeded
+Analyzing and compiling 1799-maximize-score-after-n-operations.c to 1799-maximize-score-after-n-operations.o
+1799-maximize-score-after-n-operations.c:40:23: warning: Value stored to 'n' during its initialization is never read [deadcode.DeadStores]
+    int m = numsSize, n = numsSize / 2;
+                      ^   ~~~~~~~~~~~~
+1 warning generated.
+Compilation and analysis of 1799-maximize-score-after-n-operations.c succeeded
+Analyzing and compiling 1838-frequency-of-the-most-frequent-element.c to 1838-frequency-of-the-most-frequent-element.o
+Compilation and analysis of 1838-frequency-of-the-most-frequent-element.c succeeded
+Analyzing and compiling 1856-maximum-subarray-min-product.c to 1856-maximum-subarray-min-product.o
+Compilation and analysis of 1856-maximum-subarray-min-product.c succeeded
+Analyzing and compiling 1899-merge-triplets-to-form-target-triplet.c to 1899-merge-triplets-to-form-target-triplet.o
+Compilation and analysis of 1899-merge-triplets-to-form-target-triplet.c succeeded
+Analyzing and compiling 1905-count-sub-islands.c to 1905-count-sub-islands.o
+Compilation and analysis of 1905-count-sub-islands.c succeeded
+Analyzing and compiling 1929-concatenation-of-array.c to 1929-concatenation-of-array.o
+Compilation and analysis of 1929-concatenation-of-array.c succeeded
+Analyzing and compiling 1930-unique-length-3-palindromic-subsequences.c to 1930-unique-length-3-palindromic-subsequences.o
+Compilation and analysis of 1930-unique-length-3-palindromic-subsequences.c succeeded
+Analyzing and compiling 1963-minimum-number-of-swaps-to-make-the-string-balanced.c to 1963-minimum-number-of-swaps-to-make-the-string-balanced.o
+Compilation and analysis of 1963-minimum-number-of-swaps-to-make-the-string-balanced.c succeeded
+Analyzing and compiling 1964-find-the-longest-valid-obstacle-course-at-each-position.c to 1964-find-the-longest-valid-obstacle-course-at-each-position.o
+Compilation and analysis of 1964-find-the-longest-valid-obstacle-course-at-each-position.c succeeded
+Analyzing and compiling 1968-array-with-elements-not-equal-to-average-of-neighbors.c to 1968-array-with-elements-not-equal-to-average-of-neighbors.o
+Compilation and analysis of 1968-array-with-elements-not-equal-to-average-of-neighbors.c succeeded
+Analyzing and compiling 2002-maximum-product-of-the-length-of-two-palindromic-subsequences.c to 2002-maximum-product-of-the-length-of-two-palindromic-subsequences.o
+Compilation and analysis of 2002-maximum-product-of-the-length-of-two-palindromic-subsequences.c succeeded
+Analyzing and compiling 2140-solving-questions-with-brainpower.c to 2140-solving-questions-with-brainpower.o
+2140-solving-questions-with-brainpower.c:15:25: warning: The right operand of '+' is a garbage value [core.UndefinedBinaryOperatorResult]
+        dp[i] = (points + dp[(jump + i + 1) < n ? (jump + i + 1) : n]) > dp[i + 1] ? (points + dp[(jump + i + 1) < n ? (jump + i + 1) : n]) : dp[i + 1];
+                        ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2140-solving-questions-with-brainpower.c:18:5: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+    long long result = dp[0];
+    ^~~~~~~~~~~~~~~~   ~~~~~
+2 warnings generated.
+Compilation and analysis of 2140-solving-questions-with-brainpower.c succeeded
+Analyzing and compiling 2466-count-ways-to-build-good-strings.c to 2466-count-ways-to-build-good-strings.o
+Compilation and analysis of 2466-count-ways-to-build-good-strings.c succeeded
+Compilation and static analysis completed.
