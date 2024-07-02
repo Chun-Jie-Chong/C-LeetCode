@@ -18,7 +18,7 @@ for cfile in *.c; do
         echo "Analyzing and compiling $cfile to $ofile" | tee -a "$LOGFILE"
         # Compile the C file to an object file with static analysis enabled
         # Redirect both stdout and stderr to the log file
-        $CC $CFLAGS $ANALYZE_FLAGS -c "$cfile" -o "$ofile" &>> "$LOGFILE"
+        $CC $CFLAGS $ANALYZE_FLAGS -c "$cfile" -o "$ofile" >> "$LOGFILE" 2>&1
         
         # Check if the compilation was successful
         if [[ $? -eq 0 ]]; then
