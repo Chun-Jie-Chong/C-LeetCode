@@ -10,6 +10,8 @@ LOGFILE="compile_and_analyze_log.txt"
 > "$LOGFILE"
 
 # Iterate over all .c files in the current directory
+cd ../code
+
 for cfile in *.c; do
     if [[ -f "$cfile" ]]; then
         # Remove the .c extension and add .o to get the object file name

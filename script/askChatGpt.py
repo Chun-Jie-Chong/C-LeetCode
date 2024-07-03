@@ -8,7 +8,7 @@ def ask_chatgpt(prompt):
         model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are an expert in solving leetcode questions."},
-            {"role": "user", "content": f"Below is a leetcode question. Please provide a solution in C programming language. Provide only the functional implementation. Do not include any explaination.\n {prompt}"}
+            {"role": "user", "content": f"Below is a leetcode question. Please provide a solution in C programming language. Provide only the functional implementation. Do not include any explanation. Include any necessary headers for the code to work.\n {prompt}"}
         ]
     )
     return response.choices[0].message.content

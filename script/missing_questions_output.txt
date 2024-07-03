@@ -1,0 +1,155 @@
+URL: https://leetcode.com/problems/search-insert-position/description/
+Title: 35. Search Insert Position
+Difficulty: Easy
+Content:
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+You must write an algorithm with O(log n) runtime complexity.
+  Example 1:
+Input: nums = [1,3,5,6], target = 5
+Output: 2
+Example 2:
+Input: nums = [1,3,5,6], target = 2
+Output: 1
+Example 3:
+Input: nums = [1,3,5,6], target = 7
+Output: 4
+  Constraints:
+1 <= nums.length <= 104
+-104 <= nums[i] <= 104
+nums contains distinct values sorted in ascending order.
+-104 <= target <= 104
+
+--------------------------------------------------------------------------------
+
+URL: https://leetcode.com/problems/counting-bits/description/
+Title: 338. Counting Bits
+Difficulty: Easy
+Content:
+Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+  Example 1:
+Input: n = 2
+Output: [0,1,1]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+Example 2:
+Input: n = 5
+Output: [0,1,1,2,1,2]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+3 --> 11
+4 --> 100
+5 --> 101
+  Constraints:
+0 <= n <= 105
+  Follow up:
+It is very easy to come up with a solution with a runtime of O(n log n). Can you do it in linear time O(n) and possibly in a single pass?
+Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
+
+--------------------------------------------------------------------------------
+
+URL: https://leetcode.com/problems/powx-n/description/
+Title: 50. Pow(x, n)
+Difficulty: Medium
+Content:
+Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+  Example 1:
+Input: x = 2.00000, n = 10
+Output: 1024.00000
+Example 2:
+Input: x = 2.10000, n = 3
+Output: 9.26100
+Example 3:
+Input: x = 2.00000, n = -2
+Output: 0.25000
+Explanation: 2-2 = 1/22 = 1/4 = 0.25
+  Constraints:
+-100.0 < x < 100.0
+-231 <= n <= 231-1
+n is an integer.
+Either x is not zero or n > 0.
+-104 <= xn <= 104
+
+--------------------------------------------------------------------------------
+
+URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+Title: 3. Longest Substring Without Repeating Characters
+Difficulty: Medium
+Content:
+Given a string s, find the length of the longest
+substring
+without repeating characters.
+  Example 1:
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3.
+Example 2:
+Input: s = "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+Example 3:
+Input: s = "pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3.
+Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+  Constraints:
+0 <= s.length <= 5 * 104
+s consists of English letters, digits, symbols and spaces.
+
+--------------------------------------------------------------------------------
+
+URL: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+Title: 121. Best Time to Buy and Sell Stock
+Difficulty: Easy
+Content:
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+  Example 1:
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+Example 2:
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
+  Constraints:
+1 <= prices.length <= 105
+0 <= prices[i] <= 104
+
+--------------------------------------------------------------------------------
+
+URL: https://leetcode.com/problems/length-of-the-last-word/description/
+Title: N/A
+Difficulty: N/A
+Content:
+N/A
+
+--------------------------------------------------------------------------------
+
+URL: https://leetcode.com/problems/container-with-most-water/description/
+Title: 11. Container With Most Water
+Difficulty: Medium
+Content:
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+Return the maximum amount of water a container can store.
+Notice that you may not slant the container.
+  Example 1:
+Input: height = [1,8,6,2,5,4,8,3,7]
+Output: 49
+Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+Example 2:
+Input: height = [1,1]
+Output: 1
+  Constraints:
+n == height.length
+2 <= n <= 105
+0 <= height[i] <= 104
+
+--------------------------------------------------------------------------------
+
