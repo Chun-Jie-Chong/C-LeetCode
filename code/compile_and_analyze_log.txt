@@ -112,8 +112,6 @@ Analyzing and compiling 0057-insert-interval.c to 0057-insert-interval.o
 Compilation and analysis of 0057-insert-interval.c succeeded
 Analyzing and compiling 0058-length-of-last-word.c to 0058-length-of-last-word.o
 Compilation and analysis of 0058-length-of-last-word.c succeeded
-Analyzing and compiling 0058-length-of-the-last-word.c to 0058-length-of-the-last-word.o
-Compilation and analysis of 0058-length-of-the-last-word.c succeeded
 Analyzing and compiling 0062-unique-paths.c to 0062-unique-paths.o
 Compilation and analysis of 0062-unique-paths.c succeeded
 Analyzing and compiling 0066-plus-one.c to 0066-plus-one.o
