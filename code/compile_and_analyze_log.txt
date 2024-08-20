@@ -15,6 +15,10 @@ Analyzing and compiling 0009-palindrome-number.c to 0009-palindrome-number.o
 1 warning generated.
 Compilation and analysis of 0009-palindrome-number.c succeeded
 Analyzing and compiling 0010-regular-expression-matching.c to 0010-regular-expression-matching.o
+0010-regular-expression-matching.c:15:24: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
+            dp[0][j] = dp[0][j - 2];
+                       ^~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0010-regular-expression-matching.c succeeded
 Analyzing and compiling 0011-container-with-most-water.c to 0011-container-with-most-water.o
 Compilation and analysis of 0011-container-with-most-water.c succeeded
@@ -31,12 +35,43 @@ Compilation and analysis of 0019-remove-nth-node-from-end-of-list.c succeeded
 Analyzing and compiling 0021-merge-two-sorted-lists.c to 0021-merge-two-sorted-lists.o
 Compilation and analysis of 0021-merge-two-sorted-lists.c succeeded
 Analyzing and compiling 0022-generate-parentheses.c to 0022-generate-parentheses.o
-Compilation and analysis of 0022-generate-parentheses.c succeeded
+clang: error: unable to execute command: Segmentation fault: 11
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Apple clang version 15.0.0 (clang-1500.3.9.4)
+Target: arm64-apple-darwin23.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /var/folders/5w/jmkl6qkx7gz1n35t5l46fr_r0000gn/T/0022-generate-parentheses-b224d9.c
+clang: note: diagnostic msg: /var/folders/5w/jmkl6qkx7gz1n35t5l46fr_r0000gn/T/0022-generate-parentheses-b224d9.sh
+clang: note: diagnostic msg: Crash backtrace is located in
+clang: note: diagnostic msg: /Users/michaelchong/Library/Logs/DiagnosticReports/clang_<YYYY-MM-DD-HHMMSS>_<hostname>.crash
+clang: note: diagnostic msg: (choose the .crash file that corresponds to your crash)
+clang: note: diagnostic msg: 
+
+********************
+Compilation and analysis of 0022-generate-parentheses.c failed
 Analyzing and compiling 0023-merge-k-sorted-lists.c to 0023-merge-k-sorted-lists.o
+0023-merge-k-sorted-lists.c:70:42: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        for(size_t i = 0; i < listsSize; i += 2)
+                                         ^
+0023-merge-k-sorted-lists.c:73:65: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+            ListNode* l2 = (i + 1) < listsSize ? lists[i + 1] : NULL;
+                                                                ^~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stddef.h:89:24: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+                       ^
 0023-merge-k-sorted-lists.c:75:45: warning: Array access (from variable 'mergedLists') results in an undefined pointer dereference [core.NullDereference]
             mergedLists[mergedListsIndex++] = mergeLists(l1, l2);
             ~~~~~~~~~~~                     ^
-1 warning generated.
+0023-merge-k-sorted-lists.c:78:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        lists = mergedLists;
+                ^~~~~~~~~~~
+4 warnings generated.
 Compilation and analysis of 0023-merge-k-sorted-lists.c succeeded
 Analyzing and compiling 0024-swap-nodes-in-pairs.c to 0024-swap-nodes-in-pairs.o
 Compilation and analysis of 0024-swap-nodes-in-pairs.c succeeded
@@ -59,23 +94,47 @@ Compilation and analysis of 0035-search-insert-position.c succeeded
 Analyzing and compiling 0036-valid-sudoku.c to 0036-valid-sudoku.o
 Compilation and analysis of 0036-valid-sudoku.c succeeded
 Analyzing and compiling 0039-combination-sum.c to 0039-combination-sum.o
+0039-combination-sum.c:20:51: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    comb_array -> array = (int*)malloc(array_size * sizeof(int));
+                                       ~~~~~~~~~~~^~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0039-combination-sum.c succeeded
 Analyzing and compiling 0040-combination-sum-ii.c to 0040-combination-sum-ii.o
+0040-combination-sum-ii.c:5:57: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+        result[*resultSize] = (int *)malloc(currentSize * sizeof(int));
+                                            ~~~~~~~~~~~~^~~~~~~~~~~~~
+0040-combination-sum-ii.c:36:49: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int *current = (int *)malloc(candidatesSize * sizeof(int));
+                                 ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+2 warnings generated.
 Compilation and analysis of 0040-combination-sum-ii.c succeeded
 Analyzing and compiling 0041-first-missing-positive.c to 0041-first-missing-positive.o
 Compilation and analysis of 0041-first-missing-positive.c succeeded
 Analyzing and compiling 0043-multiply-strings.c to 0043-multiply-strings.o
+0043-multiply-strings.c:19:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    char* res = (char*)malloc((len + 1) * sizeof(char));
+                              ~~~~~~~~~~^~~~~~~~~~~~~~
 0043-multiply-strings.c:30:16: warning: Potential leak of memory pointed to by 'result' [unix.Malloc]
         return "0";
                ^~~
 0043-multiply-strings.c:30:16: warning: Potential leak of memory pointed to by 'res' [unix.Malloc]
         return "0";
                ^~~
-2 warnings generated.
+3 warnings generated.
 Compilation and analysis of 0043-multiply-strings.c succeeded
 Analyzing and compiling 0045-jump-game-ii.c to 0045-jump-game-ii.o
 Compilation and analysis of 0045-jump-game-ii.c succeeded
 Analyzing and compiling 0046-permutations.c to 0046-permutations.o
+0046-permutations.c:34:52: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** result = (int**)malloc(totalPermutations * sizeof(int*));
+                                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+0046-permutations.c:35:42: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* current = (int*)malloc(numsSize * sizeof(int));
+                                ~~~~~~~~~^~~~~~~~~~~~~
+0046-permutations.c:37:57: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    *returnColumnSizes = (int*)malloc(totalPermutations * sizeof(int));
+                                      ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+3 warnings generated.
 Compilation and analysis of 0046-permutations.c succeeded
 Analyzing and compiling 0048-rotate-image.c to 0048-rotate-image.o
 Compilation and analysis of 0048-rotate-image.c succeeded
@@ -89,16 +148,31 @@ Analyzing and compiling 0051-n-queens.c to 0051-n-queens.o
 0051-n-queens.c:33:19: warning: The left operand of '<' is a garbage value [core.UndefinedBinaryOperatorResult]
     for (int x; x < 4; x++) {
                 ~ ^
-1 warning generated.
+0051-n-queens.c:48:36: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    char** copy = (char**)malloc(n * sizeof(char*));
+                                 ~~^~~~~~~~~~~~~~~
+0051-n-queens.c:50:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+        copy[i] = (char*)malloc((n + 1) * sizeof(char));
+                                ~~~~~~~~^~~~~~~~~~~~~~
+0051-n-queens.c:88:42: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    char** chessboard = (char**)malloc(n * sizeof(char*));
+                                       ~~^~~~~~~~~~~~~~~
+0051-n-queens.c:90:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+        chessboard[i] = (char*)malloc(n * sizeof(char));
+                                      ~~^~~~~~~~~~~~~~
+5 warnings generated.
 Compilation and analysis of 0051-n-queens.c succeeded
 Analyzing and compiling 0052-n-queens-ii.c to 0052-n-queens-ii.o
-0052-n-queens-ii.c:23:13: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+0052-n-queens-ii.c:23:13: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
         if (board[i-k][j-k])
             ^~~~~~~~~~~~~~~
-0052-n-queens-ii.c:27:13: warning: Array access results in an undefined pointer dereference [core.NullDereference]
+0052-n-queens-ii.c:27:13: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
         if (board[i-k][j+k])
             ^~~~~~~~~~~~~~~
-2 warnings generated.
+0052-n-queens-ii.c:47:38: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** board = malloc(sizeof(int*)*n);
+                         ~~~~~~~~~~~~^~
+3 warnings generated.
 Compilation and analysis of 0052-n-queens-ii.c succeeded
 Analyzing and compiling 0053-maximum-subarray.c to 0053-maximum-subarray.o
 Compilation and analysis of 0053-maximum-subarray.c succeeded
@@ -107,16 +181,38 @@ Compilation and analysis of 0054-spiral-matrix.c succeeded
 Analyzing and compiling 0055-jump-game.c to 0055-jump-game.o
 Compilation and analysis of 0055-jump-game.c succeeded
 Analyzing and compiling 0056-merge-intervals.c to 0056-merge-intervals.o
+0056-merge-intervals.c:47:47: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** result = (int**)malloc(sizeof(int*) * mergedCount);
+                                 ~~~~~~~~~~~~~^~~~~~~~~~~~~
+0056-merge-intervals.c:48:51: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    *returnColumnSizes = (int*)malloc(sizeof(int) * mergedCount);
+                                      ~~~~~~~~~~~~^~~~~~~~~~~~~
+2 warnings generated.
 Compilation and analysis of 0056-merge-intervals.c succeeded
 Analyzing and compiling 0057-insert-interval.c to 0057-insert-interval.o
+0057-insert-interval.c:5:47: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** result = (int**)malloc(sizeof(int*) * (intervalsSize + 1));
+                                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+0057-insert-interval.c:6:51: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    *returnColumnSizes = (int*)malloc(sizeof(int) * (intervalsSize + 1));
+                                      ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
 Compilation and analysis of 0057-insert-interval.c succeeded
 Analyzing and compiling 0058-length-of-last-word.c to 0058-length-of-last-word.o
 Compilation and analysis of 0058-length-of-last-word.c succeeded
 Analyzing and compiling 0062-unique-paths.c to 0062-unique-paths.o
 Compilation and analysis of 0062-unique-paths.c succeeded
 Analyzing and compiling 0066-plus-one.c to 0066-plus-one.o
+0066-plus-one.c:27:44: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* result = (int*) malloc(sizeof(int)*(digitsSize+1));
+                                ~~~~~~~~~~~^~~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0066-plus-one.c succeeded
 Analyzing and compiling 0067-add-binary.c to 0067-add-binary.o
+0067-add-binary.c:6:45: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    char *res = (char *)malloc((maxLen + 2) * sizeof(char));
+                               ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0067-add-binary.c succeeded
 Analyzing and compiling 0069-sqrtx.c to 0069-sqrtx.o
 Compilation and analysis of 0069-sqrtx.c succeeded
@@ -131,16 +227,25 @@ Compilation and analysis of 0074-search-a-2d-matrix.c succeeded
 Analyzing and compiling 0075-sort-colors.c to 0075-sort-colors.o
 Compilation and analysis of 0075-sort-colors.c succeeded
 Analyzing and compiling 0076-minimum-window-substring.c to 0076-minimum-window-substring.o
-0076-minimum-window-substring.c:51:21: warning: Use of memory allocated with size zero [unix.Malloc]
+0076-minimum-window-substring.c:51:21: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
         ans[maxLen] = '\0';
-                    ^
+        ~~~~~~~~~~~ ^
 1 warning generated.
 Compilation and analysis of 0076-minimum-window-substring.c succeeded
 Analyzing and compiling 0078-subsets.c to 0078-subsets.o
-0078-subsets.c:45:26: warning: Use of memory allocated with size zero [unix.Malloc]
-            result[lead] = new_subset;
-                         ^
-1 warning generated.
+0078-subsets.c:18:51: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* factorials = (int*)malloc((numsSize + 1) * sizeof(int));
+                                   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+0078-subsets.c:32:47: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** result = (int**)malloc(combinations * sizeof(int*));
+                                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+0078-subsets.c:33:54: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    returnColumnSizes[0] = (int*)malloc(combinations * sizeof(int));
+                                        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+0078-subsets.c:34:29: warning: Out of bound memory access (access exceeds upper limit of memory block) [alpha.security.ArrayBoundV2]
+    returnColumnSizes[0][0] = 0;
+    ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+4 warnings generated.
 Compilation and analysis of 0078-subsets.c succeeded
 Analyzing and compiling 0079-word-search.c to 0079-word-search.o
 Compilation and analysis of 0079-word-search.c succeeded
@@ -155,6 +260,13 @@ Compilation and analysis of 0084-largest-rectangle-in-histogram.c succeeded
 Analyzing and compiling 0088-merge-sorted-array.c to 0088-merge-sorted-array.o
 Compilation and analysis of 0088-merge-sorted-array.c succeeded
 Analyzing and compiling 0090-subsets-ii.c to 0090-subsets-ii.o
+0090-subsets-ii.c:9:54: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    (*result)[*resultSize] = (int*)malloc(subsetSize * sizeof(int));
+                                          ~~~~~~~~~~~^~~~~~~~~~~~~
+0090-subsets-ii.c:37:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* subset = (int*)malloc(numsSize * sizeof(int));
+                               ~~~~~~~~~^~~~~~~~~~~~~
+2 warnings generated.
 Compilation and analysis of 0090-subsets-ii.c succeeded
 Analyzing and compiling 0091-decode-ways.c to 0091-decode-ways.o
 0091-decode-ways.c:31:5: warning: Potential leak of memory pointed to by 'dp' [unix.Malloc]
@@ -165,10 +277,13 @@ Compilation and analysis of 0091-decode-ways.c succeeded
 Analyzing and compiling 0094-binary-tree-inorder-traversal.c to 0094-binary-tree-inorder-traversal.o
 Compilation and analysis of 0094-binary-tree-inorder-traversal.c succeeded
 Analyzing and compiling 0096-unique-binary-search-trees.c to 0096-unique-binary-search-trees.o
+0096-unique-binary-search-trees.c:13:39: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* dp = (int*)malloc(sizeof(int)*(n+1));
+                           ~~~~~~~~~~~^~~~~~
 0096-unique-binary-search-trees.c:22:5: warning: Potential leak of memory pointed to by 'dp' [unix.Malloc]
     return dp[n];
     ^~~~~~~~~~~~
-1 warning generated.
+2 warnings generated.
 Compilation and analysis of 0096-unique-binary-search-trees.c succeeded
 Analyzing and compiling 0097-interleaving-string.c to 0097-interleaving-string.o
 Compilation and analysis of 0097-interleaving-string.c succeeded
@@ -190,7 +305,16 @@ Analyzing and compiling 0118-pascals-triangle.c to 0118-pascals-triangle.o
 0118-pascals-triangle.c:13:28: warning: Result of 'malloc' is converted to a pointer of type 'int', which is incompatible with sizeof operand type 'int *' [unix.MallocSizeof]
     (*returnColumnSizes) = malloc(sizeof(int*)*numRows);
                            ^~~~~~ ~~~~~~~~~~~~
-1 warning generated.
+0118-pascals-triangle.c:13:47: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    (*returnColumnSizes) = malloc(sizeof(int*)*numRows);
+                                  ~~~~~~~~~~~~^~~~~~~~
+0118-pascals-triangle.c:14:36: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** ans = malloc(sizeof(int*)*numRows);
+                       ~~~~~~~~~~~~^~~~~~~~
+0118-pascals-triangle.c:17:36: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+        ans[i] = malloc(sizeof(int)*(i+1));
+                        ~~~~~~~~~~~^~~~~~
+4 warnings generated.
 Compilation and analysis of 0118-pascals-triangle.c succeeded
 Analyzing and compiling 0120-triangle.c to 0120-triangle.o
 Compilation and analysis of 0120-triangle.c succeeded
@@ -207,10 +331,24 @@ Compilation and analysis of 0129-sum-root-to-leaf-numbers.c succeeded
 Analyzing and compiling 0130-surrounded-regions.c to 0130-surrounded-regions.o
 Compilation and analysis of 0130-surrounded-regions.c succeeded
 Analyzing and compiling 0133-clone-graph.c to 0133-clone-graph.o
+0133-clone-graph.c:18:64: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+        node -> neighbors = (struct Node**)malloc(numNeighbors * sizeof(struct Node*));
+                                                  ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0133-clone-graph.c succeeded
 Analyzing and compiling 0134-gas-station.c to 0134-gas-station.o
 Compilation and analysis of 0134-gas-station.c succeeded
 Analyzing and compiling 0135-candy.c to 0135-candy.o
+0135-candy.c:5:45: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* candies = (int*)malloc(sizeof(int) * ratingsSize);
+                                ~~~~~~~~~~~~^~~~~~~~~~~~~
+0135-candy.c:21:55: warning: The left operand of '<=' is a garbage value [core.UndefinedBinaryOperatorResult]
+        if (ratings[i] > ratings[i + 1] && candies[i] <= candies[i + 1]) {
+                                           ~~~~~~~~~~ ^
+0135-candy.c:22:41: warning: The left operand of '+' is a garbage value [core.UndefinedBinaryOperatorResult]
+            candies[i] = candies[i + 1] + 1;
+                         ~~~~~~~~~~~~~~ ^
+3 warnings generated.
 Compilation and analysis of 0135-candy.c succeeded
 Analyzing and compiling 0136-single-number.c to 0136-single-number.o
 Compilation and analysis of 0136-single-number.c succeeded
@@ -233,30 +371,30 @@ Analyzing and compiling 0148-sort-list.c to 0148-sort-list.o
 1 warning generated.
 Compilation and analysis of 0148-sort-list.c succeeded
 Analyzing and compiling 0150-evaluate-reverse-polish-notation.c to 0150-evaluate-reverse-polish-notation.o
-0150-evaluate-reverse-polish-notation.c:13:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+0150-evaluate-reverse-polish-notation.c:13:25: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int first = stk[stkIndex];
-            ^~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:15:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                        ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:15:26: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int second = stk[stkIndex];
-            ^~~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:21:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                         ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:21:25: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int first = stk[stkIndex];
-            ^~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:23:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                        ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:23:26: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int second = stk[stkIndex];
-            ^~~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:29:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                         ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:29:26: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             long first = stk[stkIndex];
-            ^~~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:31:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                         ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:31:26: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int second = stk[stkIndex];
-            ^~~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:38:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                         ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:38:25: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int first = stk[stkIndex];
-            ^~~~~~~~~   ~~~~~~~~~~~~~
-0150-evaluate-reverse-polish-notation.c:40:13: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                        ^~~~~~~~~~~~~
+0150-evaluate-reverse-polish-notation.c:40:26: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             int second = stk[stkIndex];
-            ^~~~~~~~~~   ~~~~~~~~~~~~~
+                         ^~~~~~~~~~~~~
 8 warnings generated.
 Compilation and analysis of 0150-evaluate-reverse-polish-notation.c succeeded
 Analyzing and compiling 0152-maximum-product-subarray.c to 0152-maximum-product-subarray.o
@@ -300,13 +438,19 @@ Compilation and analysis of 0208-implement-trie-prefix-tree.c succeeded
 Analyzing and compiling 0209-minimum-size-subarray-sum.c to 0209-minimum-size-subarray-sum.o
 Compilation and analysis of 0209-minimum-size-subarray-sum.c succeeded
 Analyzing and compiling 0212-word-search-ii.c to 0212-word-search-ii.o
+0212-word-search-ii.c:73:51: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    char** result = (char**) malloc(sizeof(char*) * wordsSize);
+                                    ~~~~~~~~~~~~~~^~~~~~~~~~~
+0212-word-search-ii.c:77:52: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    bool** visited = (bool**) malloc(sizeof(bool*) * boardSize);
+                                     ~~~~~~~~~~~~~~^~~~~~~~~~~
 0212-word-search-ii.c:91:19: warning: Potential leak of memory pointed to by 'trie' [unix.Malloc]
     *returnSize = resultSize;
                   ^~~~~~~~~~
 0212-word-search-ii.c:91:19: warning: Potential leak of memory pointed to by 'visited' [unix.Malloc]
     *returnSize = resultSize;
                   ^~~~~~~~~~
-2 warnings generated.
+4 warnings generated.
 Compilation and analysis of 0212-word-search-ii.c succeeded
 Analyzing and compiling 0213-house-robber-ii.c to 0213-house-robber-ii.o
 Compilation and analysis of 0213-house-robber-ii.c succeeded
@@ -321,8 +465,16 @@ Compilation and analysis of 0234-palindrome-linked-list.c succeeded
 Analyzing and compiling 0235-lowest-common-ancestor-of-a-binary-search-tree.c to 0235-lowest-common-ancestor-of-a-binary-search-tree.o
 Compilation and analysis of 0235-lowest-common-ancestor-of-a-binary-search-tree.c succeeded
 Analyzing and compiling 0238-product-of-array-except-self.c to 0238-product-of-array-except-self.o
+0238-product-of-array-except-self.c:14:44: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int *result = (int *)malloc(sizeof(int)*numsSize);
+                                ~~~~~~~~~~~^~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0238-product-of-array-except-self.c succeeded
 Analyzing and compiling 0239-sliding-window-maximum.c to 0239-sliding-window-maximum.o
+0239-sliding-window-maximum.c:22:38: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    deque->data = (Pair*)malloc(size * sizeof(Pair));
+                                ~~~~~^~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0239-sliding-window-maximum.c succeeded
 Analyzing and compiling 0242-valid-anagram.c to 0242-valid-anagram.o
 Compilation and analysis of 0242-valid-anagram.c succeeded
@@ -337,6 +489,10 @@ Compilation and analysis of 0283-move-zeroes.c succeeded
 Analyzing and compiling 0287-find-the-duplicate-number.c to 0287-find-the-duplicate-number.o
 Compilation and analysis of 0287-find-the-duplicate-number.c succeeded
 Analyzing and compiling 0297-serialize-and-deserialize-binary-tree.c to 0297-serialize-and-deserialize-binary-tree.o
+0297-serialize-and-deserialize-binary-tree.c:82:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    char* data = (char*)malloc(dataSize * sizeof(char));
+                               ~~~~~~~~~^~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0297-serialize-and-deserialize-binary-tree.c succeeded
 Analyzing and compiling 0300-longest-increasing-subsequence.c to 0300-longest-increasing-subsequence.o
 Compilation and analysis of 0300-longest-increasing-subsequence.c succeeded
@@ -347,12 +503,19 @@ Compilation and analysis of 0312-burst-balloons.c succeeded
 Analyzing and compiling 0322-coin-change.c to 0322-coin-change.o
 Compilation and analysis of 0322-coin-change.c succeeded
 Analyzing and compiling 0329-longest-increasing-path-in-a-matrix.c to 0329-longest-increasing-path-in-a-matrix.o
+0329-longest-increasing-path-in-a-matrix.c:32:35: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** dp = malloc(sizeof(int*)*matrixSize);
+                      ~~~~~~~~~~~~^~~~~~~~~~~
 0329-longest-increasing-path-in-a-matrix.c:42:12: warning: Potential leak of memory pointed to by 'dp' [unix.Malloc]
     return ans;
            ^~~
-1 warning generated.
+2 warnings generated.
 Compilation and analysis of 0329-longest-increasing-path-in-a-matrix.c succeeded
 Analyzing and compiling 0332-reconstruct-itinerary.c to 0332-reconstruct-itinerary.o
+0332-reconstruct-itinerary.c:37:46: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    p = (char **)malloc((ticketsRowSize + 1) * sizeof(char *));
+                        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0332-reconstruct-itinerary.c succeeded
 Analyzing and compiling 0338-counting-bits.c to 0338-counting-bits.o
 Compilation and analysis of 0338-counting-bits.c succeeded
@@ -361,6 +524,10 @@ Compilation and analysis of 0343-integer-break.c succeeded
 Analyzing and compiling 0344-reverse-string.c to 0344-reverse-string.o
 Compilation and analysis of 0344-reverse-string.c succeeded
 Analyzing and compiling 0347-top-k-frequent-elements.c to 0347-top-k-frequent-elements.o
+0347-top-k-frequent-elements.c:45:36: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    res = (int*)malloc(sizeof(int) * k);
+                       ~~~~~~~~~~~~^~~
+1 warning generated.
 Compilation and analysis of 0347-top-k-frequent-elements.c succeeded
 Analyzing and compiling 0371-sum-of-two-integers.c to 0371-sum-of-two-integers.o
 Compilation and analysis of 0371-sum-of-two-integers.c succeeded
@@ -371,7 +538,7 @@ Compilation and analysis of 0392-is-subsequence.c succeeded
 Analyzing and compiling 0409-longest-palindrome.c to 0409-longest-palindrome.o
 Compilation and analysis of 0409-longest-palindrome.c succeeded
 Analyzing and compiling 0416-partition-equal-subset-sum.c to 0416-partition-equal-subset-sum.o
-0416-partition-equal-subset-sum.c:28:21: warning: Branch condition evaluates to a garbage value [core.uninitialized.Branch]
+0416-partition-equal-subset-sum.c:28:21: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
             dp[j] = dp[j] || dp[j - nums[i]];
                     ^~~~~
 1 warning generated.
@@ -389,6 +556,10 @@ Analyzing and compiling 0438-find-all-anagrams-in-a-string.c to 0438-find-all-an
 1 warning generated.
 Compilation and analysis of 0438-find-all-anagrams-in-a-string.c succeeded
 Analyzing and compiling 0448-find-all-numbers-disappeared-in-an-array.c to 0448-find-all-numbers-disappeared-in-an-array.o
+0448-find-all-numbers-disappeared-in-an-array.c:8:53: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* disappearedNumbers = (int*)malloc(numsSize * sizeof(int)); // Allocate space for the worst case
+                                           ~~~~~~~~~^~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0448-find-all-numbers-disappeared-in-an-array.c succeeded
 Analyzing and compiling 0463-island-perimeter.c to 0463-island-perimeter.o
 Compilation and analysis of 0463-island-perimeter.c succeeded
@@ -445,10 +616,13 @@ Analyzing and compiling 0682-baseball-game.c to 0682-baseball-game.o
 7 warnings generated.
 Compilation and analysis of 0682-baseball-game.c succeeded
 Analyzing and compiling 0684-redundant-connection.c to 0684-redundant-connection.o
+0684-redundant-connection.c:23:37: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* parent = malloc(sizeof(int)*(edgesSize+1));
+                         ~~~~~~~~~~~^~~~~~~~~~~~~~
 0684-redundant-connection.c:36:19: warning: Potential leak of memory pointed to by 'parent' [unix.Malloc]
     *returnSize = 2;
                   ^
-1 warning generated.
+2 warnings generated.
 Compilation and analysis of 0684-redundant-connection.c succeeded
 Analyzing and compiling 0691-stickers-to-spell-word.c to 0691-stickers-to-spell-word.o
 Compilation and analysis of 0691-stickers-to-spell-word.c succeeded
@@ -461,12 +635,19 @@ Compilation and analysis of 0707-design-linked-list.c succeeded
 Analyzing and compiling 0724-find-pivot-index.c to 0724-find-pivot-index.o
 Compilation and analysis of 0724-find-pivot-index.c succeeded
 Analyzing and compiling 0739-daily-temperatures.c to 0739-daily-temperatures.o
+0739-daily-temperatures.c:20:44: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* result = (int*) malloc(sizeof(int)*temperaturesSize);
+                                ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0739-daily-temperatures.c succeeded
 Analyzing and compiling 0740-delete-and-earn.c to 0740-delete-and-earn.o
-0740-delete-and-earn.c:27:11: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+0740-delete-and-earn.c:22:23: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
+        freq[nums[i]] += nums[i];
+        ~~~~~~~~~~~~~ ^
+0740-delete-and-earn.c:27:13: warning: Access out-of-bound array element (buffer overflow) [alpha.security.ArrayBound]
     dp[1] = freq[1];
-          ^ ~~~~~~~
-1 warning generated.
+            ^~~~~~~
+2 warnings generated.
 Compilation and analysis of 0740-delete-and-earn.c succeeded
 Analyzing and compiling 0746-min-cost-climbing-stairs.c to 0746-min-cost-climbing-stairs.o
 Compilation and analysis of 0746-min-cost-climbing-stairs.c succeeded
@@ -485,17 +666,39 @@ Compilation and analysis of 0876-middle-of-the-linked-list.c succeeded
 Analyzing and compiling 0881-boats-to-save-people.c to 0881-boats-to-save-people.o
 Compilation and analysis of 0881-boats-to-save-people.c succeeded
 Analyzing and compiling 0912-sort-an-array.c to 0912-sort-an-array.o
+0912-sort-an-array.c:24:43: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int * left = (int *)malloc(sizeof(int)*n1);
+                               ~~~~~~~~~~~^~~
+0912-sort-an-array.c:25:42: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int * right=(int *)malloc(sizeof(int)*n2);
+                              ~~~~~~~~~~~^~~
 0912-sort-an-array.c:57:11: warning: Potential leak of memory pointed to by 'left' [unix.Malloc]
     while(j<n2){
           ^
 0912-sort-an-array.c:63:1: warning: Potential leak of memory pointed to by 'right' [unix.Malloc]
 };
 ^
-2 warnings generated.
+0912-sort-an-array.c:67:44: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int *array = (int *) malloc(sizeof(int)*numsSize);
+                                ~~~~~~~~~~~^~~~~~~~~
+5 warnings generated.
 Compilation and analysis of 0912-sort-an-array.c succeeded
 Analyzing and compiling 0953-verifying-an-alien-dictionary.c to 0953-verifying-an-alien-dictionary.o
 Compilation and analysis of 0953-verifying-an-alien-dictionary.c succeeded
 Analyzing and compiling 0973-k-closest-points-to-origin.c to 0973-k-closest-points-to-origin.o
+0973-k-closest-points-to-origin.c:30:49: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    Point* pointArr = (Point*)malloc(pointsSize * sizeof(Point));
+                                     ~~~~~~~~~~~^~~~~~~~~~~~~~~
+0973-k-closest-points-to-origin.c:36:21: warning: Loss of sign in implicit conversion [alpha.core.Conversion]
+    qsort(pointArr, pointsSize, sizeof(Point), compare);
+                    ^~~~~~~~~~
+0973-k-closest-points-to-origin.c:38:36: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** result = (int**)malloc(k * sizeof(int*));
+                                 ~~^~~~~~~~~~~~~~
+0973-k-closest-points-to-origin.c:40:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    *returnColumnSizes = (int*)malloc(k * sizeof(int));
+                                      ~~^~~~~~~~~~~~~
+4 warnings generated.
 Compilation and analysis of 0973-k-closest-points-to-origin.c succeeded
 Analyzing and compiling 0980-unique-paths-iii.c to 0980-unique-paths-iii.o
 0980-unique-paths-iii.c:51:12: warning: 3rd function call argument is an uninitialized value [core.CallAndMessage]
@@ -511,6 +714,10 @@ Compilation and analysis of 0981-time-based-key-value-store.c succeeded
 Analyzing and compiling 0983-minimum-cost-for-tickets.c to 0983-minimum-cost-for-tickets.o
 Compilation and analysis of 0983-minimum-cost-for-tickets.c succeeded
 Analyzing and compiling 0989-add-to-array-form-of-integer.c to 0989-add-to-array-form-of-integer.o
+0989-add-to-array-form-of-integer.c:9:40: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* result = (int*)malloc(maxSize * sizeof(int));
+                               ~~~~~~~~^~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 0989-add-to-array-form-of-integer.c succeeded
 Analyzing and compiling 0994-rotting-oranges.c to 0994-rotting-oranges.o
 Compilation and analysis of 0994-rotting-oranges.c succeeded
@@ -533,12 +740,19 @@ Compilation and analysis of 1406-stone-game-iii.c succeeded
 Analyzing and compiling 1448-count-good-nodes-in-binary-tree.c to 1448-count-good-nodes-in-binary-tree.o
 Compilation and analysis of 1448-count-good-nodes-in-binary-tree.c succeeded
 Analyzing and compiling 1470-shuffle-the-array.c to 1470-shuffle-the-array.o
+1470-shuffle-the-array.c:6:41: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* result = (int*)malloc(numsSize * sizeof(int));
+                               ~~~~~~~~~^~~~~~~~~~~~~
 1470-shuffle-the-array.c:9:9: warning: Although the value stored to 'j' is used in the enclosing expression, the value is never actually read from 'j' [deadcode.DeadStores]
     i = j = k = 0;
         ^   ~~~~~
-1 warning generated.
+2 warnings generated.
 Compilation and analysis of 1470-shuffle-the-array.c succeeded
 Analyzing and compiling 1480-running-sum-of-1d-array.c to 1480-running-sum-of-1d-array.o
+1480-running-sum-of-1d-array.c:15:32: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int *ret = malloc(numsSize * sizeof(int));
+                      ~~~~~~~~~^~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 1480-running-sum-of-1d-array.c succeeded
 Analyzing and compiling 1626-best-team-with-no-conflicts.c to 1626-best-team-with-no-conflicts.o
 Compilation and analysis of 1626-best-team-with-no-conflicts.c succeeded
@@ -546,7 +760,13 @@ Analyzing and compiling 1799-maximize-score-after-n-operations.c to 1799-maximiz
 1799-maximize-score-after-n-operations.c:40:23: warning: Value stored to 'n' during its initialization is never read [deadcode.DeadStores]
     int m = numsSize, n = numsSize / 2;
                       ^   ~~~~~~~~~~~~
-1 warning generated.
+1799-maximize-score-after-n-operations.c:41:39: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int** gcdValues = (int**)malloc(m * sizeof(int*));
+                                    ~~^~~~~~~~~~~~~~
+1799-maximize-score-after-n-operations.c:43:39: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+        gcdValues[i] = (int*)malloc(m * sizeof(int));
+                                    ~~^~~~~~~~~~~~~
+3 warnings generated.
 Compilation and analysis of 1799-maximize-score-after-n-operations.c succeeded
 Analyzing and compiling 1838-frequency-of-the-most-frequent-element.c to 1838-frequency-of-the-most-frequent-element.o
 Compilation and analysis of 1838-frequency-of-the-most-frequent-element.c succeeded
@@ -557,26 +777,58 @@ Compilation and analysis of 1899-merge-triplets-to-form-target-triplet.c succeed
 Analyzing and compiling 1905-count-sub-islands.c to 1905-count-sub-islands.o
 Compilation and analysis of 1905-count-sub-islands.c succeeded
 Analyzing and compiling 1929-concatenation-of-array.c to 1929-concatenation-of-array.o
+1929-concatenation-of-array.c:10:39: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int *ans = (int*)malloc(2*numsSize*sizeof(int));
+                            ~~~~~~~~~~^~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 1929-concatenation-of-array.c succeeded
 Analyzing and compiling 1930-unique-length-3-palindromic-subsequences.c to 1930-unique-length-3-palindromic-subsequences.o
+1930-unique-length-3-palindromic-subsequences.c:14:13: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        c = s[i] - 'a';
+            ^
+1930-unique-length-3-palindromic-subsequences.c:26:13: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        if (last[i] != -1) {
+            ^~~~
+1930-unique-length-3-palindromic-subsequences.c:29:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                int c = s[j] - 'a';
+                        ^
+3 warnings generated.
 Compilation and analysis of 1930-unique-length-3-palindromic-subsequences.c succeeded
 Analyzing and compiling 1963-minimum-number-of-swaps-to-make-the-string-balanced.c to 1963-minimum-number-of-swaps-to-make-the-string-balanced.o
 Compilation and analysis of 1963-minimum-number-of-swaps-to-make-the-string-balanced.c succeeded
 Analyzing and compiling 1964-find-the-longest-valid-obstacle-course-at-each-position.c to 1964-find-the-longest-valid-obstacle-course-at-each-position.o
+1964-find-the-longest-valid-obstacle-course-at-each-position.c:18:43: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* lis = (int*)malloc(obstaclesSize * sizeof(int));
+                            ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+1964-find-the-longest-valid-obstacle-course-at-each-position.c:19:46: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* result = (int*)malloc(obstaclesSize * sizeof(int));
+                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+2 warnings generated.
 Compilation and analysis of 1964-find-the-longest-valid-obstacle-course-at-each-position.c succeeded
 Analyzing and compiling 1968-array-with-elements-not-equal-to-average-of-neighbors.c to 1968-array-with-elements-not-equal-to-average-of-neighbors.o
+1968-array-with-elements-not-equal-to-average-of-neighbors.c:16:34: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* ans = malloc(sizeof(int)*numsSize);
+                      ~~~~~~~~~~~^~~~~~~~~
+1 warning generated.
 Compilation and analysis of 1968-array-with-elements-not-equal-to-average-of-neighbors.c succeeded
 Analyzing and compiling 2002-maximum-product-of-the-length-of-two-palindromic-subsequences.c to 2002-maximum-product-of-the-length-of-two-palindromic-subsequences.o
 Compilation and analysis of 2002-maximum-product-of-the-length-of-two-palindromic-subsequences.c succeeded
 Analyzing and compiling 2140-solving-questions-with-brainpower.c to 2140-solving-questions-with-brainpower.o
-2140-solving-questions-with-brainpower.c:15:25: warning: The right operand of '+' is a garbage value [core.UndefinedBinaryOperatorResult]
+2140-solving-questions-with-brainpower.c:6:48: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    long long* dp = (long long*)malloc((n + 1) * sizeof(long long));
+                                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~
+2140-solving-questions-with-brainpower.c:15:27: warning: Out of bound memory access (accessed memory precedes memory block) [alpha.security.ArrayBoundV2]
         dp[i] = (points + dp[(jump + i + 1) < n ? (jump + i + 1) : n]) > dp[i + 1] ? (points + dp[(jump + i + 1) < n ? (jump + i + 1) : n]) : dp[i + 1];
-                        ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2140-solving-questions-with-brainpower.c:18:5: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
     long long result = dp[0];
     ^~~~~~~~~~~~~~~~   ~~~~~
-2 warnings generated.
+3 warnings generated.
 Compilation and analysis of 2140-solving-questions-with-brainpower.c succeeded
 Analyzing and compiling 2466-count-ways-to-build-good-strings.c to 2466-count-ways-to-build-good-strings.o
+2466-count-ways-to-build-good-strings.c:6:39: warning: the computation of the size of the memory allocation may overflow [alpha.security.MallocOverflow]
+    int* dp = (int*)malloc((high + 1) * sizeof(int));
+                           ~~~~~~~~~~~^~~~~~~~~~~~~
+1 warning generated.
 Compilation and analysis of 2466-count-ways-to-build-good-strings.c succeeded
 Compilation and static analysis completed.
